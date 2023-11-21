@@ -1,0 +1,61 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header ul {
+   color: var(--font);
+   list-style: none;
+   display: none; 
+}
+
+header li {
+    display: flex;
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    background-color: var(--space);
+}
+
+.navbarLogo img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0 10px 35px;
+}
+
+.navbarQuestion {
+    display: flex;
+    margin: 10px 35px 10px auto;
+}
+
+.fa-circle-question {
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    header ul {
+        display: flex;
+    }
+
+    .navbarQuestion {
+        display: none;
+    }
+}
+
+@media (min-width: 1240px) {
+    header li {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    header li:nth-child(1) {
+        margin-left: 80px;
+    }
+}
