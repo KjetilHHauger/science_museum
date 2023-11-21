@@ -1,0 +1,45 @@
+body {
+    background-color: var(--space);
+    display: flex;
+    position: relative;
+}
+
+.boxYellow {
+    position: absolute;
+    bottom: -100px;
+    right: 264px;
+    background-color: var(--sun);
+    width: 94px;
+    height: 52px;
+    margin: 0;
+    transform: rotate(-56deg);
+}
+
+.boxPeach {
+    position: absolute;
+    bottom: -102px;
+    right: 176px;
+    background-color: var(--peach);
+    width: 102px;
+    height: 60px;
+    margin: 0;
+    transform: rotate(-40deg);
+}
+
+.fa-brands {
+    color: var(--peach);
+    font-size: 1.8rem;
+}
+
+.boxSky {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: -128px;
+    right: 35px;
+    background-color: var(--sky);
+    width: 145px;
+    height: 56px;
+    margin: 0;
+}
