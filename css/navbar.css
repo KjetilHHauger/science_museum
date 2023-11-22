@@ -6,8 +6,11 @@ body {
     margin: 0;
 }
 
+header {
+    display: flex;
+}
+
 header ul {
-   color: var(--font);
    list-style: none;
    display: none; 
 }
@@ -17,6 +20,11 @@ header li {
     padding: 0 0.5rem;
     font-size: 1.3rem;
     align-items: center;
+}
+
+header a {
+    color: var(--font);
+    text-decoration: none;
 }
 
 .navbar {
