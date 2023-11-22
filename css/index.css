@@ -62,48 +62,47 @@ main {
 @keyframes spaceship {
     from {
         transform: translateX(5%);
-
+        transform: rotate(90deg);
     }
     10% {
         transform: translateX(-5%);
-        transform: rotate(-2deg);
+        transform: rotate(88deg);
     }
     20% {
         transform: translateX(5%);
-
+        transform: rotate(90deg);
     }
     30% {
         transform: translateX(-5%);
-        transform: rotate(2deg);
-
+        transform: rotate(92deg);
     }
     40% {
         transform: translateX(5%);
-
+        transform: rotate(90deg);
     }
     50% {
         transform: translateX(-5%);
-
+        transform: rotate(90deg);
     }
     60% {
         transform: translateX(5%);
-
+        transform: rotate(90deg);
     }
     70% {
         transform: translateX(-5%);
-
+        transform: rotate(90deg);
     }
     80%{
         transform: translateX(5%);
-        transform: rotate(-2deg);
+        transform: rotate(88deg);
     }
     90% {
         transform: translateX(-5%);
-
+        transform: rotate(90deg);
     }
     to {
         transform: translateX(-5%);
-        transform: rotate(2deg);
+        transform: rotate(92deg);
     }
 }
 
@@ -158,7 +157,7 @@ main {
     background-image: url(/images/spacecake.webp);
     background-size: cover;
     background-position-x: -300px;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
 
 .circle img {
@@ -193,7 +192,6 @@ main {
     position: absolute;
     width: 90px;
     height: 152px;
-    rotate: 90deg;
     left: 30px;
     animation: spaceship;
     animation-duration: 10s;
