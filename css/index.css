@@ -99,21 +99,23 @@
 
 @keyframes earthShake {
     from {
-        transform: translateX(0);
+        transform: translateX(5%);
+        transform: translateY(0);
     }
     50% {
-        transform: translateX(5%);
-        transform: translateY(2%);
+        transform: translateX(0);
+        transform: translateY(10%);
     }
     to {
-        transform: translateX(0);
-    }
+        transform: translateX(5%);
+        transform: translateY(0);
+    } 
 }
 
 @keyframes marsShake {
     from {
         transform: translateX(0);
-        transform: translateY(2%);
+        transform: translateY(5%);
     }
     50% {
         transform: translateX(10%);
@@ -121,17 +123,13 @@
     }
     to {
         transform: translateX(0);
-        transform: translateY(2%);
+        transform: translateY(5%);
     } 
-}
-
-body {
-    height: 100vh;
 }
 
 .geometry {
     z-index: -10;
-    top: 10%;
+    top: 152px;
     position: relative;
     display: grid;
     justify-content: center;
@@ -149,7 +147,8 @@ body {
     background-color: var(--sky);
     width: 354px;
     height: 354px;
-    left: -22%;
+    top: 0;
+    left: -30px;
     border-radius: 50%;
     grid-area: circle;
     background-image: url(/images/spacecake.webp);
@@ -176,12 +175,12 @@ body {
 
 .square {
     position: absolute;
-    width: 300px;
-    height: 200px;
-    top: 40%;
-    left: -10.5%;
+    width: 322px;
+    height: 201px;
+    top: 128px;
+    left: -12px;
     background-color: var(--sky);
-    transform: rotate(-149deg);
+    transform: rotate(317deg);
     grid-area: square;
     background-image: url(/images/indexSpace.webp);
     background-position: -30px;
@@ -206,19 +205,18 @@ body {
     position: relative;
     width: 0;
     height: 0;
-    top: 27.5%;
-    justify-content: center;
-    border-left: 124px solid transparent;
-    border-right: 124px solid transparent;
-    border-bottom: 248px solid var(--sun);
+    top: 66px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid var(--sun);
     grid-area: triangle;
 }
 
 .triangle img:nth-child(1) {
     position: absolute;
     width: 160px;
-    height: 140px;
-    top: 40px;
+    height: 135px;
+    top: 10px;
     left: -80px;
     animation: sunRotate;
     animation-duration: 10s;
@@ -229,16 +227,9 @@ body {
 .triangle img:nth-child(2) {
     position: absolute;
     width: 150px;
-    height: 120px;
-    top: 150px;
+    height: 125px;
+    top: 130px;
     left: -170px;
-    animation: earthShake;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.triangle img:nth-child(2) {
     animation: earthShake;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -247,9 +238,9 @@ body {
 
 .triangle img:nth-child(3) {
     position: absolute;
-    width: 120px;
-    height: 100px;
-    top: 140px;
+    width: 100px;
+    height: 80px;
+    top: 120px;
     left: 20px;
 }
 
@@ -261,48 +252,61 @@ body {
 }
 
 @media (min-width: 768px) {
+    body {
+        height: 100vh;
+    }
+
     .geometry {
-        display: flex;
-        top: 25%;
+        display: grid;
+        top: 170px;
+        justify-content: left;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "circle"
+        "square"
+        "triangle";
     }
     
     .triangle {
-        transform: rotate(180deg);
-        left: -27.5%;
-        border-left: 174px solid transparent;
-        border-right: 174px solid transparent;
-        border-bottom: 348px solid var(--sun);
+        position: absolute;
+        transform: rotate(360deg);
+        top: 347px;
+        left: 166px;
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+        border-bottom: 600px solid var(--sun);
     }
 
     .triangle img:nth-child(1) {
         position: absolute;
-        width: 160px;
-        height: 140px;
-        top: 260px;
-        left: -80px;
+        width: 260px;
+        height: 210px;
+        top: 77px;
+        left: -76px;
     }
     
     .triangle img:nth-child(2) {
         position: absolute;
-        width: 150px;
-        height: 120px;
-        top: 150px;
-        left: -70px;
+        width: 210px;
+        height: 180px;
+        top: 404px;
+        left: -312px;
     }
     
     .triangle img:nth-child(3) {
         position: absolute;
-        width: 120px;
-        height: 100px;
-        top: 140px;
-        left: 20px;
+        width: 180px;
+        height: 140px;
+        top: 317px;
+        left: -10px;
     }
 
     .circle {
-        width: 261px;
-        height: 261px;
-        top: 27%;
-        left: 32.8%;
+        width: 361px;
+        height: 361px;
+        top: 3px;
+        left: 210px;
         background-position-x: -170px;
     }
 
@@ -313,11 +317,11 @@ body {
     }
 
     .square {
-        width: 290px;
-        height: 190px;
-        left: 60.4%;
-        top: 20%;
-        transform: rotate(-120deg);
+        width: 390px;
+        height: 290px;
+        left: 23px;
+        top: 373px;
+        transform: rotate(296.5deg);
     }
 }
 

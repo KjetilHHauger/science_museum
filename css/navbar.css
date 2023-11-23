@@ -16,7 +16,7 @@ header ul {
 header li {
     display: flex;
     padding: 0 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     align-items: center;
 }
 
@@ -26,6 +26,7 @@ header a {
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     background-color: var(--space);
 }
@@ -57,7 +58,7 @@ header a {
 
 @media (min-width: 1240px) {
     header li {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 0 1rem;
     }
 

@@ -1,18 +1,6 @@
-iframe {
-    width: 100%;
-    border: none;
-}
-
-header iframe {
-    height: 84px;
-}
-
-main {
-    height: 100%;
-}
-
 .geometry {
     position: relative;
+    top: 100px;
     display: grid;
     justify-content: center;
     grid-template-columns: auto;
@@ -51,8 +39,4 @@ main {
     background-color: var(--peach);
     transform: rotate(-149deg);
     grid-area: square;
-}
-
-footer iframe {
-    height: 128px;
 }

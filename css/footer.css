@@ -1,8 +1,9 @@
-footer {
-    position: relative;
-    bottom: -140px;
+.footerRelative {
+    position: fixed;
     background-color: var(--space);
     height: 112px;
+    width: 100vw;
+    border-top: 1px solid var(--sky);
 }
 
 .boxYellow {
@@ -11,7 +12,7 @@ footer {
     background-color: var(--sun);
     width: 94px;
     height: 52px;
-    bottom: 28px;
+    bottom: -3px;
     margin: 0;
     transform: rotate(-56deg);
 }
@@ -22,14 +23,9 @@ footer {
     background-color: var(--peach);
     width: 102px;
     height: 60px;
-    bottom: 26px;
+    bottom: -6px;
     margin: 0;
     transform: rotate(-40deg);
-}
-
-.fa-brands {
-    color: var(--peach);
-    font-size: 1.8rem;
 }
 
 .boxSky {
@@ -38,16 +34,26 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     right: 35px;
-    bottom: 0px;
+    bottom: -31px;
     background-color: var(--sky);
     width: 145px;
     height: 56px;
     margin: 0;
 }
 
+.fa-brands {
+    color: var(--peach);
+    font-size: 1.8rem;
+}
+
+footer {
+    position: relative;
+    bottom: -235px;
+}
+
 @media (min-width: 768px) {
     footer {
-        position: static;
-        bottom: 0;
+        position: relative;
+        bottom: -234px;
     }
 }
