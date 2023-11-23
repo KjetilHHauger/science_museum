@@ -1,26 +1,28 @@
-body {
-    display: flex;
+footer {
     position: relative;
+    bottom: -140px;
+    background-color: var(--space);
+    height: 112px;
 }
 
 .boxYellow {
     position: absolute;
-    bottom: -100px;
     right: 264px;
     background-color: var(--sun);
     width: 94px;
     height: 52px;
+    bottom: 28px;
     margin: 0;
     transform: rotate(-56deg);
 }
 
 .boxPeach {
     position: absolute;
-    bottom: -102px;
     right: 176px;
     background-color: var(--peach);
     width: 102px;
     height: 60px;
+    bottom: 26px;
     margin: 0;
     transform: rotate(-40deg);
 }
@@ -35,10 +37,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    bottom: -128px;
     right: 35px;
+    bottom: 0px;
     background-color: var(--sky);
     width: 145px;
     height: 56px;
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    footer {
+        position: static;
+        bottom: 0;
+    }
 }
