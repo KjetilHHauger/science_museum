@@ -1,28 +1,3 @@
-iframe {
-    width: 100%;
-    border: none;
-}
-
-header iframe {
-    height: 84px;
-}
-
-main {
-    height: 100%;
-}
-
-.geometry {
-    position: relative;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "circle"
-    "square"
-    "triangle";
-}
-
 @keyframes astronautX {
     from {
         transform: translateX(-5%);
@@ -59,51 +34,55 @@ main {
     }
 }
 
-@keyframes spaceship {
+
+@keyframes spaceshipRotate {
     from {
-        transform: translateX(5%);
         transform: rotate(90deg);
     }
     10% {
-        transform: translateX(-5%);
         transform: rotate(88deg);
+
     }
     20% {
-        transform: translateX(5%);
         transform: rotate(90deg);
     }
     30% {
-        transform: translateX(-5%);
         transform: rotate(92deg);
     }
     40% {
-        transform: translateX(5%);
         transform: rotate(90deg);
     }
     50% {
-        transform: translateX(-5%);
         transform: rotate(90deg);
     }
     60% {
-        transform: translateX(5%);
         transform: rotate(90deg);
     }
     70% {
-        transform: translateX(-5%);
         transform: rotate(90deg);
     }
     80%{
-        transform: translateX(5%);
         transform: rotate(88deg);
     }
     90% {
-        transform: translateX(-5%);
-        transform: rotate(90deg);
-    }
-    to {
-        transform: translateX(-5%);
         transform: rotate(92deg);
     }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes spaceshipStretch {
+    from {
+        background-size: 85%;
+    }
+    50% {
+        background-size: 90%;
+    }
+    to {
+        background-size: 85%;
+    }
+    
 }
 
 @keyframes sunRotate {
@@ -143,7 +122,32 @@ main {
     to {
         transform: translateX(0);
         transform: translateY(2%);
-    }
+    } 
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+header iframe {
+    height: 84px;
+}
+
+main {
+    height: 100%;
+}
+
+.geometry {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "circle"
+    "square"
+    "triangle";
 }
 
 .circle {
@@ -186,6 +190,11 @@ main {
     grid-area: square;
     background-image: url(/images/indexSpace.webp);
     background-position: -30px;
+    animation: spaceshipStretch;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
 }
 
 .square img {
@@ -193,7 +202,7 @@ main {
     width: 90px;
     height: 152px;
     left: 30px;
-    animation: spaceship;
+    animation: spaceshipRotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -258,4 +267,39 @@ main {
 
 footer iframe {
     height: 128px;
+}
+
+@media (min-width: 768px) {
+    .geometry {
+        display: flex;
+    }
+    
+    .triangle {
+        transform: rotate(180deg);
+        left: -20.8rem;
+    }
+
+    .circle {
+        width: 261px;
+        height: 261px;
+        top: 27%;
+        left: 15.8rem;
+        background-position-x: -170px;
+    }
+
+    .circle img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .square {
+        width: 434px;
+        height: 210px;
+        left: 32.3rem;
+        top: 20%;
+    }
+}
+
+@media (min-width: 1240px) {
+    
 }
