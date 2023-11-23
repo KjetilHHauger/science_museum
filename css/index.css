@@ -125,23 +125,17 @@
     } 
 }
 
-iframe {
-    width: 100%;
-    border: none;
-}
-
-header iframe {
-    height: 84px;
-}
-
-main {
-    height: 100%;
+body {
+    height: 100vh;
 }
 
 .geometry {
+    z-index: -10;
+    top: 10%;
     position: relative;
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -153,10 +147,10 @@ main {
 .circle {
     position: absolute;
     background-color: var(--sky);
-    width: 353px;
-    height: 353px;
+    width: 354px;
+    height: 354px;
+    left: -22%;
     border-radius: 50%;
-    top: 27%;
     grid-area: circle;
     background-image: url(/images/spacecake.webp);
     background-size: cover;
@@ -166,10 +160,11 @@ main {
 
 .circle img {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 80px;
-    left: 20px;
+    width: 150px;
+    height: 150px;
+    top: 120px;
+    left: 70px;
+    justify-content: center;
 }
 
 .circle img {
@@ -181,10 +176,10 @@ main {
 
 .square {
     position: absolute;
-    width: 280px;
-    height: 192px;
-    right: 7%;
-    top: 42%;
+    width: 300px;
+    height: 200px;
+    top: 40%;
+    left: -10.5%;
     background-color: var(--sky);
     transform: rotate(-149deg);
     grid-area: square;
@@ -194,7 +189,6 @@ main {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    
 }
 
 .square img {
@@ -212,18 +206,20 @@ main {
     position: relative;
     width: 0;
     height: 0;
-    border-left: 174px solid transparent;
-    border-right: 174px solid transparent;
-    border-bottom: 348px solid var(--sun);
+    top: 27.5%;
+    justify-content: center;
+    border-left: 124px solid transparent;
+    border-right: 124px solid transparent;
+    border-bottom: 248px solid var(--sun);
     grid-area: triangle;
 }
 
 .triangle img:nth-child(1) {
     position: absolute;
-    width: 140px;
+    width: 160px;
     height: 140px;
-    top: 60px;
-    left: -70px;
+    top: 40px;
+    left: -80px;
     animation: sunRotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -233,14 +229,15 @@ main {
 .triangle img:nth-child(2) {
     position: absolute;
     width: 150px;
-    height: 150px;
-    top: 190px;
+    height: 120px;
+    top: 150px;
     left: -170px;
     animation: earthShake;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 .triangle img:nth-child(2) {
     animation: earthShake;
     animation-duration: 10s;
@@ -251,7 +248,7 @@ main {
 .triangle img:nth-child(3) {
     position: absolute;
     width: 120px;
-    height: 120px;
+    height: 100px;
     top: 140px;
     left: 20px;
 }
@@ -263,40 +260,64 @@ main {
     animation-timing-function: ease-in-out;
 }
 
-
-
-footer iframe {
-    height: 128px;
-}
-
 @media (min-width: 768px) {
     .geometry {
         display: flex;
+        top: 25%;
     }
     
     .triangle {
         transform: rotate(180deg);
-        left: -20.8rem;
+        left: -27.5%;
+        border-left: 174px solid transparent;
+        border-right: 174px solid transparent;
+        border-bottom: 348px solid var(--sun);
+    }
+
+    .triangle img:nth-child(1) {
+        position: absolute;
+        width: 160px;
+        height: 140px;
+        top: 260px;
+        left: -80px;
+    }
+    
+    .triangle img:nth-child(2) {
+        position: absolute;
+        width: 150px;
+        height: 120px;
+        top: 150px;
+        left: -70px;
+    }
+    
+    .triangle img:nth-child(3) {
+        position: absolute;
+        width: 120px;
+        height: 100px;
+        top: 140px;
+        left: 20px;
     }
 
     .circle {
         width: 261px;
         height: 261px;
         top: 27%;
-        left: 15.8rem;
+        left: 32.8%;
         background-position-x: -170px;
     }
 
     .circle img {
         width: 60%;
         height: 60%;
+        top: 20%;
     }
 
     .square {
-        width: 434px;
-        height: 210px;
-        left: 32.3rem;
+        width: 290px;
+        height: 190px;
+        left: 60.4%;
         top: 20%;
+        transform: rotate(-120deg);
     }
 }
 
