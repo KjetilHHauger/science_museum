@@ -1,5 +1,5 @@
-.footerRelative {
-    position: fixed;
+.footerMainBox {
+    position: relative;
     background-color: var(--space);
     height: 112px;
     width: 100vw;
@@ -8,33 +8,33 @@
 
 .boxYellow {
     position: absolute;
+    bottom: 28px;
     right: 264px;
     background-color: var(--sun);
     width: 94px;
     height: 52px;
-    bottom: -3px;
     margin: 0;
     transform: rotate(-56deg);
 }
 
 .boxPeach {
     position: absolute;
-    right: 176px;
+    bottom: 26px;
+    right: 175px;
     background-color: var(--peach);
     width: 102px;
     height: 60px;
-    bottom: -6px;
     margin: 0;
     transform: rotate(-40deg);
 }
 
 .boxSky {
     position: absolute;
+    bottom: 0;
+    right: 35px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    right: 35px;
-    bottom: -31px;
     background-color: var(--sky);
     width: 145px;
     height: 56px;
@@ -46,14 +46,6 @@
     font-size: 1.8rem;
 }
 
-footer {
-    position: relative;
-    bottom: -235px;
-}
-
 @media (min-width: 768px) {
-    footer {
-        position: relative;
-        bottom: -234px;
-    }
+
 }
