@@ -6,6 +6,7 @@ nav {
     display: flex;
     width: 100vw;
     background-color: var(--space);
+    border-bottom: 1px solid var(--sky);
 }
 
 header ul {

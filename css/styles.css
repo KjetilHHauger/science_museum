@@ -10,11 +10,10 @@
     box-sizing: border-box;
 }
 
-main {
-    height: 70vh;
-}
-
 body {
     margin: 0;
     background-color: var(--space);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
