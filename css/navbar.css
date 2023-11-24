@@ -30,6 +30,7 @@ header a {
     position: fixed;
     display: flex;
     background-color: var(--space);
+    z-index: 10;
 }
 
 .navbarLogo img {

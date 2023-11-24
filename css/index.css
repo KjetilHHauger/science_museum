@@ -1,3 +1,25 @@
+.geometry {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 90px;
+    padding-bottom: 91px;
+}
+
+.circle {
+    position: relative;
+    background-color: var(--sky);
+    width: 354px;
+    height: 354px;
+    border-radius: 50%;
+    background-image: url(/images/spacecake.webp);
+    background-size: cover;
+    background-position-x: -300px;
+    background-repeat: no-repeat;
+    margin-bottom: 72px;
+}
+
 @keyframes astronautX {
     from {
         transform: translateX(-5%);
@@ -34,6 +56,30 @@
     }
 }
 
+.circle img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 120px;
+    left: 70px;
+    animation: astronautX;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.square {
+    width: 306px;
+    height: 201px;
+    background-color: var(--sky);
+    transform: rotate(317deg);
+    background-image: url(/images/indexSpace.webp);
+    background-position: -30px;
+    animation: spaceshipStretch;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
 @keyframes spaceshipRotate {
     from {
@@ -85,6 +131,27 @@
     
 }
 
+.square img {
+    position: absolute;
+    width: 90px;
+    height: 152px;
+    left: 65px;
+    animation: spaceshipRotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-top: 37px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid var(--sun);
+}
+
 @keyframes sunRotate {
     from {
         transform: rotate(0deg);
@@ -125,83 +192,6 @@
         transform: translateX(0);
         transform: translateY(5%);
     } 
-}
-
-.geometry {
-    position: relative;
-    z-index: -10;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "circle"
-    "square"
-    "triangle";
-    top: 117px;
-    justify-content: center;
-}
-
-.circle {
-    background-color: var(--sky);
-    width: 354px;
-    height: 354px;
-    border-radius: 50%;
-    grid-area: circle;
-    background-image: url(/images/spacecake.webp);
-    background-size: cover;
-    background-position-x: -300px;
-    background-repeat: no-repeat;
-}
-
-.circle img {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 120px;
-    left: 70px;
-    animation: astronautX;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.square {
-    margin-top: 72px;
-    justify-self: center;
-    width: 306px;
-    height: 201px;
-    background-color: var(--sky);
-    transform: rotate(317deg);
-    grid-area: square;
-    background-image: url(/images/indexSpace.webp);
-    background-position: -30px;
-    animation: spaceshipStretch;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.square img {
-    position: absolute;
-    width: 90px;
-    height: 152px;
-    left: 65px;
-    animation: spaceshipRotate;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-.triangle {
-    justify-self: center;
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -44px;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 300px solid var(--sun);
-    grid-area: triangle;
 }
 
 .triangle img:nth-child(1) {
@@ -245,193 +235,83 @@ footer {
 }
 
 @media (min-width: 768px) {
-    body {
-        position: relative;
-    }
-    
     main {
-        display: flex;
-        justify-content: center;
+        margin-top: auto;
     }
-    
+        .geometry {
+        top: 112px;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "triangle circle square ";
+    }
+
+    .circle {
+        grid-area: circle;
+        width: 354px;
+        height: 354px;
+        top: 108px;
+        left: -140px;
+    }
+
+    .square {
+        position: relative;
+        grid-area: square;
+        width: 417px;
+        height: 156px;
+        transform: rotate(246deg);
+        left: -265px;
+        top: 29px;
+    }
+
+    .triangle {
+        grid-area: triangle;
+        transform: rotate(180deg);
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+        border-bottom: 500px solid var(--sun);
+        top: -19px;
+    }
+}
+
+@media (min-width: 1024px) {
     .geometry {
-        display: flex;
-        bottom: 0;
-    }
-    
-    .triangle {
-        top: 397px;
-        left: -55px;
-        border-left: 200px solid transparent;
-        border-right: 200px solid transparent;
-        border-bottom: 400px solid var(--sun);
-    }
-
-    .square {
-        position: absolute;
-        width: 390px;
-        height: 207px;
-        left: -5px;
-        top: 88px;
-        margin: 0;
-        transform: rotate(303deg);
+        top: 112px;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "triangle circle square ";
     }
 
     .circle {
-        position: absolute;
-        width: 462px;
-        height: 462px;
-        top: 243px;
-        left: -384px;
-        background-position-x: -440px;
-    }
-}
-
-@media (min-width: 1024px) { 
-    .triangle {
-        top: 362px;
-        left: -158px;
-        border-left: 300px solid transparent;
-        border-right: 300px solid transparent;
-        border-bottom: 600px solid var(--sun);
+        grid-area: circle;
+        width: 354px;
+        height: 354px;
+        top: 108px;
+        left: -140px;
     }
 
     .square {
-        width: 486px;
-        height: 304px;
-        left: -18px;
-        top: 80px;
-        margin: 0;
-        transform: rotate(211deg);
+        position: relative;
+        grid-area: square;
+        width: 449px;
+        height: 217px;
+        transform: rotate(246deg);
+        left: -257px;
+        top: 1px;
     }
 
-    .circle {
-        width: 550px;
-        height: 550px;
-        top: 228px;
-        left: -512px;
-        background-position-x: -440px;
-    }
-}
-
-@media (min-width: 1440px) {
     .triangle {
-        top: 475px;
-        left: -33px;
-        border-left: 350px solid transparent;
-        border-right: 350px solid transparent;
-        border-bottom: 700px solid var(--sun);
-    }
-
-    .triangle img:nth-child(1) {
-        width: 312px;
-        height: 258px;
-        top: 57px;
-        left: -98px;
-    }
-    
-    .triangle img:nth-child(2) {
-        width: 268px;
-        height: 224px;
-        top: 460px;
-        left: -208px;
-    }
-    
-    .triangle img:nth-child(3) {
-        width: 200px;
-        height: 160px;
-        top: 360px;
-        left: 40px;
-    }
-
-    .square {
-        width: 629px;
-        height: 381px;
-        left: 39px;
-        top: 87px;
-        margin: 0;
-        transform: rotate(208deg);
-    }
-
-    .square img {
-        width: 195px;
-        height: 335px;
-        left: 92px;
-    }
-    
-    .circle {
-        width: 800px;
-        height: 800px;
-        top: 372px;
-        left: -680px;
-        background-position-x: -793px;
-    }
-
-    .circle img {
-        width: 300px;
-        height: 300px;
-        top: 200px;
-        left: 70px;
+        grid-area: triangle;
+        transform: rotate(180deg);
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+        border-bottom: 500px solid var(--sun);
+        top: -19px;
     }
 }
 
-@media (min-width: 2560px) {
-    .triangle {
-        top: 920px;
-        left: -235px;
-        border-left: 750px solid transparent;
-        border-right: 750px solid transparent;
-        border-bottom: 1500px solid var(--sun);
-    }
-
-    .triangle img:nth-child(1) {
-        width: 774px;
-        height: 628px;
-        top: 172px;
-        left: -302px;
-    }
-    
-    .triangle img:nth-child(2) {
-        width: 644px;
-        height: 560px;
-        top: 888px;
-        left: -769px;
-    }
-    
-    .triangle img:nth-child(3) {
-        width: 488px;
-        height: 346px;
-        top: 832px;
-        left: 40px;
-    }
-
-    .square {
-        width: 1162px;
-        height: 740px;
-        left: 70px;
-        top: 200px;
-        margin: 0;
-        transform: rotate(208deg);
-    }
-
-    .square img {
-        width: 380px;
-        height: 634px;
-        left: 214px;
-    }
-    
-    .circle {
-        width: 1600px;
-        height: 1600px;
-        top: 446px;
-        left: -1340px;
-        background-position-x: -1580px;
-    }
-
-    .circle img {
-        width: 600px;
-        height: 600px;
-        top: 400px;
-        left: 140px;
-    }
-}
