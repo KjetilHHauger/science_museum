@@ -2,10 +2,13 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+header {
+    height: 95px;
+}
+
 nav {
     display: flex;
     width: 100vw;
-    background-color: var(--space);
     border-bottom: 1px solid var(--sky);
 }
 
@@ -35,7 +38,7 @@ header a {
 
 .navbarLogo img {
     width: 60px;
-    height: 60px;
+    height: 70px;
     margin: 10px 0 10px 35px;
 }
 

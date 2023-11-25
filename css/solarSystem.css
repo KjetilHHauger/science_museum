@@ -1,0 +1,97 @@
+main {
+    
+}
+
+.solarSystemBox {
+    min-height: 100vh;
+}
+
+.solarinfo {
+    width: 320px;
+    height: 300px;
+    background-color: var(--sky);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.clouds {
+    position: relative;
+}
+
+.clouds img {
+    position: absolute;
+    width: 100vw;
+}
+
+.clouds img:nth-child(1) {
+    z-index: 7;
+    top: 737px;
+}
+
+.clouds img:nth-child(2) {
+    z-index: 5;
+    top: 687px;
+}
+
+.clouds img:nth-child(3) {
+    z-index: 3;
+    top: 589px;
+}
+
+.clouds img:nth-child(4) {
+    z-index: 1;
+    top: 601px;
+}
+
+.planets img {
+    position: absolute;
+}
+
+/* Sun */
+.planets img:nth-child(1) {
+    top: 382px;
+    width: 526px;
+    height: 412px;
+    left: -26px;
+}
+
+/* Mercury */
+.planets img:nth-child(2) {
+    top: 749px;
+    width: 158px;
+    height: 141px;
+    z-index: 0;
+    left: 21px;
+}
+
+/* Venus */
+.planets img:nth-child(3) {
+    top: 753px;
+    width: 316px;
+    height: 281px;
+    z-index: 0;
+    left: 155px;
+}
+
+/* Earth */
+.planets img:nth-child(4) {
+    top: 915px;
+    width: 316px;
+    height: 281px;
+    z-index: 2;
+    left: -77px;
+}
+
+/* Mars */
+.planets img:nth-child(5) {
+    top: 1076px;
+    width: 158px;
+    height: 141px;
+    z-index: 6;
+    left: 182px;
+}
+
+footer {
+    z-index: 10;
+}
