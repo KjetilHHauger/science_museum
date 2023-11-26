@@ -3,20 +3,20 @@ main {
 }
 
 .solarSystemBox {
+    position: relative;
     min-height: 100vh;
 }
 
 .solarinfo {
-    width: 320px;
-    height: 300px;
+    margin-top: 20px;
+    min-width: 320px;
+    height: 400px;
     background-color: var(--sky);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
 .clouds {
-    position: relative;
+
 }
 
 .clouds img {
@@ -26,22 +26,22 @@ main {
 
 .clouds img:nth-child(1) {
     z-index: 7;
-    top: 737px;
+    bottom: 0;
 }
 
 .clouds img:nth-child(2) {
     z-index: 5;
-    top: 687px;
+    bottom: 0;
 }
 
 .clouds img:nth-child(3) {
     z-index: 3;
-    top: 589px;
+    bottom: 0;
 }
 
 .clouds img:nth-child(4) {
     z-index: 1;
-    top: 601px;
+    bottom: 0;
 }
 
 .planets img {
@@ -50,10 +50,9 @@ main {
 
 /* Sun */
 .planets img:nth-child(1) {
-    top: 382px;
-    width: 526px;
-    height: 412px;
-    left: -26px;
+    width: 377px;
+    height: 318px;
+    bottom: 300px;
 }
 
 /* Mercury */
@@ -67,11 +66,11 @@ main {
 
 /* Venus */
 .planets img:nth-child(3) {
-    top: 753px;
-    width: 316px;
-    height: 281px;
+    width: 255px;
+    height: 214px;
     z-index: 0;
-    left: 155px;
+    left: 98px;
+    bottom: 120px;
 }
 
 /* Earth */
