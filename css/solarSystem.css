@@ -7,7 +7,19 @@
     margin: 20px;
     min-width: 320px;
     height: 30vh;
-    background-color: var(--sky);
+    background-color: var(--fontBg);
+}
+
+.solarInfo h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.solarInfo p {
+    font-family: 'Expletus Sans', sans-serif;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .sunText {
@@ -54,7 +66,7 @@
 /* Sun */
 .planets img:nth-child(1) {
     height: 22%;
-    top: 404px;
+    top: 30%;
     animation: sun;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -80,8 +92,8 @@
 /* Mercury */
 .planets img:nth-child(2) {
     height: 10%;
+    top: 50%;
     left: 76px;
-    top: 696px;
     animation: mercury;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -109,8 +121,8 @@
 /* Venus */
 .planets img:nth-child(3) {
     height: 15%;
+    top: 55%;
     left: 98px;
-    top: 716px;
     animation: venus;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -138,9 +150,9 @@
 /* Earth */
 .planets img:nth-child(4) {
     height: 15%;
-    z-index: 4;
+    top: 60%;
     left: -16px;
-    top: 885px;
+    z-index: 4;
     animation: earth;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -162,9 +174,9 @@
 /* Mars */
 .planets img:nth-child(5) {
     height: 13%;
-    z-index: 8;
+    top: 70%;
     left: 160px;
-    top: 976px;
+    z-index: 8;
     animation: mars;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -194,6 +206,7 @@ footer {
     
     .cloudsDesktop {
         display: inline-block;
+        width: 100vw;
     }
 
     .cloudsDesktop img {
@@ -231,38 +244,38 @@ footer {
     /* Sun */
     .planets img:nth-child(1) {
         height: 25%;
-        top: 404px;
+        top: 30%;
     }
     
     /* Mercury */
     .planets img:nth-child(2) {
         height: 18%;
-        left: 407px;
-        top: 508px;
+        top: 40%;
+        left: 35%;
     }
     
     /* Venus */
     .planets img:nth-child(3) {
         height: 25%;
-        left: 50px;
+        top: 45%;
+        left: 10%;
         z-index: 3;
-        top: 620px;
     }
     
     /* Earth */
     .planets img:nth-child(4) {
         height: 25%;
+        top: 50%;
+        left: 45%;
         z-index: 4;
-        left: 379px;
-        top: 802px;
     }
     
     /* Mars */
     .planets img:nth-child(5) {
         height: 20%;
+        top: 65%;
+        left: 60%;
         z-index: 8;
-        left: -24px;
-        top: 974px;
     }
     
 }
@@ -311,37 +324,37 @@ footer {
     /* Sun */
     .planets img:nth-child(1) {
         height: 40%;
-        top: 348px;
     }
     
     /* Mercury */
     .planets img:nth-child(2) {
         height: 22%;
-        left: 634px;
-        top: 587px;
+        top: 45%;
+        left: 40%;
     }
     
     /* Venus */
     .planets img:nth-child(3) {
         height: 40%;
-        left: 641px;
+        top: 45%;
+        left: 45%;
         z-index: 3;
-        top: 648px;
     }
     
     /* Earth */
     .planets img:nth-child(4) {
         height: 40%;
+        top: 60%;
+        left: 5%;
         z-index: 4;
-        left: 39px;
-        top: 760px;
     }
     
     /* Mars */
     .planets img:nth-child(5) {
         height: 25%;
+        top: 75%;
+        left: 60%;
         z-index: 8;
-        left: 472px;
     }
     
 }

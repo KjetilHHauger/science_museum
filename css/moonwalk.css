@@ -1,0 +1,267 @@
+.vrWalkInfo {
+    background-color: var(--fontBg);
+    height: 384px;
+    width: 90vw;
+    color: var(--font);
+    margin: 20px auto 0 auto;
+}
+
+.vrWalkInfo h1 {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.vrWalkInfo p {
+    font-size: 1rem;
+    font-family: 'Expletus Sans', sans-serif;
+    text-align: center;
+}
+
+.vrWalk {
+    background-image: url(/images/mobile/exhibitionBgMobile.webp);
+    background-repeat: repeat;
+    position: relative;
+    min-height: 70vh;
+}
+
+/* Mars */
+.vrWalk img:nth-child(1) {
+    position: absolute;
+    width: 20%;
+    left: 20%;
+    bottom: 80%;
+    animation: mars;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mars {
+    from {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+
+/* Venus */
+.vrWalk img:nth-child(2) {
+    position: absolute;
+    width: 50%;
+    left: 30%;
+    bottom: 50%;
+    animation: venus;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes venus {
+    from {
+        transform: translateY(2%);
+    }
+    25% {
+        transform: translateX(2%);
+    }
+    50% {
+        transform: translateY(1%);
+    }
+    75% {
+        transform: translateX(1%);
+    }
+    to {
+        transform: translateY(2%);
+    }
+}
+/* Astronaut */
+.vrWalk img:nth-child(3) {
+    position: absolute;
+    width: 50%;
+    left: 2%;
+    bottom: 30%;
+}
+
+/* Mercury */
+.vrWalk img:nth-child(4) {
+    position: absolute;
+    width: 30%;
+    left: 40%;
+    bottom: 70%;
+    animation: mercury;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mercury {
+    from {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateX(2%);
+    }
+    50% {
+        transform: translateY(2%);
+    }
+    75% {
+        transform: translateX(1%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Sun */
+.vrWalk img:nth-child(5) {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    bottom: 2%;
+    animation: sun;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes sun {
+    from {
+        transform: translateY(2%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(2%);
+    }
+}
+
+footer {
+    z-index: 10;
+}
+
+@media (min-width: 580px) {
+    /* Mars */
+    .vrWalk img:nth-child(1) {
+        left: 10%;
+    }
+    
+    /* Venus */
+    .vrWalk img:nth-child(2) {
+        left: 50%;
+    }
+    
+    /* Astronaut */
+    .vrWalk img:nth-child(3) {
+        bottom: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Mars */
+    .vrWalk img:nth-child(1) {
+        left: 10%;
+    }
+    
+    /* Venus */
+    .vrWalk img:nth-child(2) {
+        left: 45%;
+        bottom: 50%;
+    }
+    
+    /* Astronaut */
+    .vrWalk img:nth-child(3) {
+        bottom: 35%;
+    }
+
+    /* Mercury */
+    .vrWalk img:nth-child(4) {
+        width: 30%;
+        left: 40%;
+        bottom: 70%;
+    }
+
+    /* Sun */
+    .vrWalk img:nth-child(5) {
+        width: 55%;
+        left: 20%;
+        bottom: 2%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Mars */
+    .vrWalk img:nth-child(1) {
+        width: 10%;
+        left: 8%;
+        bottom: 80%;
+    }
+    
+    /* Venus */
+    .vrWalk img:nth-child(2) {
+        width: 40%;
+        left: 50%;
+        bottom: 50%;
+    }
+    
+    /* Astronaut */
+    .vrWalk img:nth-child(3) {
+        bottom: 35%;
+    }
+
+    /* Mercury */
+    .vrWalk img:nth-child(4) {
+        width: 20%;
+        left: 50%;
+        bottom: 70%;
+    }
+
+    /* Sun */
+    .vrWalk img:nth-child(5) {
+        width: 70%;
+        left: 25%;
+        bottom: -12%;
+    }
+}
+
+@media (min-width: 1240px) {
+    /* Astronaut */
+    .vrWalk img:nth-child(3) {
+        width: 30%;
+        left: 2%;
+        bottom: 25%;
+    }
+
+    /* Sun */
+    .vrWalk img:nth-child(5) {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1540px) {
+   /* Venus */
+    .vrWalk img:nth-child(2) {
+        left: 55%;
+    }
+    
+    /* Astronaut */
+    .vrWalk img:nth-child(3) {
+        bottom: 35%;
+    }
+
+    /* Mercury */
+    .vrWalk img:nth-child(4) {
+        bottom: 60%;
+    }
+
+    /* Sun */
+    .vrWalk img:nth-child(5) {
+        width: 50%;
+        left: 25%;
+        bottom: -12%;
+    }
+}
