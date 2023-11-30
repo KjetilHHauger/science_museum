@@ -1,42 +1,88 @@
 .geometry {
-    position: relative;
-    top: 100px;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "circle"
-    "square"
-    "triangle";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .circle {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 340px;
     background-color: var(--sky);
-    width: 353px;
-    height: 353px;
     border-radius: 50%;
-    top: 27%;
-    grid-area: circle;
 }
 
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 174px solid transparent;
-    border-right: 174px solid transparent;
-    border-bottom: 348px solid var(--sun);
-    grid-area: triangle;
+.circleList ul {
+    list-style: none;
+    color: var(--space);
 }
 
 .square {
-    position: absolute;
-    width: 280px;
-    height: 192px;
-    right: 7%;
-    top: 42%;
+    width: 335px;
+    height: 320px;
     background-color: var(--peach);
-    transform: rotate(-149deg);
-    grid-area: square;
+    color: var(--space);
+}
+
+.square h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.square ul {
+    padding-left: 10px;
+}
+
+.square li {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.square h4 {
+    margin: 0;
+}
+
+.square p {
+    margin: 6px 0 0 8px;
+    color: var(--font);
+}
+
+.square a {
+    color: var(--font);
+}
+
+.triangle {
+    border-left: 175px solid transparent;
+    border-right: 175px solid transparent;
+    border-bottom: 350px solid var(--sun);
+}
+
+@media (min-width: 768px) {
+    .geometry {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+    }
+    
+    .circle {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .square {
+        width: 335px;
+        height: 320px;
+    }
+    
+    .triangle {
+        border-left: 175px solid transparent;
+        border-right: 175px solid transparent;
+        border-bottom: 350px solid var(--sun);
+        transform: rotate(180deg);
+    }
 }
