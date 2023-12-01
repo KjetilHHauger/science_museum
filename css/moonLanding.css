@@ -1,0 +1,177 @@
+@keyframes landing {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(370px);
+    }
+}
+
+.landingSpaceship {
+    display: flex;
+    justify-content: center;
+    animation: landing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+.landingSpaceship img {
+    width: 20%;
+    z-index: -1;
+}
+
+.landingMoon {
+    display: flex;
+    justify-content: center;
+}
+
+.landingMoon  img {
+    position: absolute;
+    width: 80%;
+    bottom: -90px;
+    transform: rotate(100deg);
+    z-index: -1;
+}
+
+.infoBox {
+    display: none;
+}
+
+@media (min-width: 425px) {
+    @keyframes landing {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(420px);
+        }
+    }
+
+    .landingMoon  img {
+        bottom: -160px;
+    }
+}
+
+@media (min-width: 768px) {
+    @keyframes landing {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(360px);
+        }
+    }
+
+    .landingSpaceship {
+        display: flex;
+        justify-content: left;
+        padding-left: 22%;
+    }
+
+    .landingSpaceship img {
+        width: 20%;
+    }
+    
+    .landingMoon {
+        display: flex;
+        justify-content: left;
+    }
+
+    .landingMoon  img {
+        width: 60%;
+        bottom: -260px;
+    }
+
+    .infoBox {
+        position: absolute;
+        display: block;
+        width: 300px;
+        height: 595px;
+        background-color: var(--fontBg);
+        right: 16px;
+        top: 114px;
+    }
+}
+
+@media (min-width: 1024px) {
+    @keyframes landing {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(260px);
+        }
+    }
+
+    .landingSpaceship {
+        display: flex;
+        justify-content: left;
+        padding-left: 23%;
+    }
+
+    .landingSpaceship img {
+        width: 20%;
+    }
+    
+    .landingMoon {
+        display: flex;
+        justify-content: left;
+    }
+
+    .landingMoon  img {
+        width: 60%;
+        bottom: -360px;
+    }
+
+    .infoBox {
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 595px;
+        background-color: var(--fontBg);
+        right: 16px;
+        top: 114px;
+    }
+}
+
+@media (min-width: 1440px) {
+    @keyframes landing {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(260px);
+        }
+    }
+
+    .landingSpaceship {
+        display: flex;
+        justify-content: left;
+        padding-left: 30%;
+    }
+
+    .landingSpaceship img {
+        width: 15%;
+    }
+    
+    .landingMoon {
+        display: flex;
+        justify-content: left;
+    }
+
+    .landingMoon  img {
+        width: 70%;
+        bottom: -700px;
+    }
+
+    .infoBox {
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 595px;
+        background-color: var(--fontBg);
+        right: 16px;
+        top: 114px;
+    }
+}
