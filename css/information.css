@@ -16,14 +16,14 @@
 
 .circleList ul {
     list-style: none;
-    color: var(--space);
+    color: var(--font);
 }
 
 .square {
     width: 335px;
     height: 320px;
     background-color: var(--peach);
-    color: var(--space);
+    color: var(--font);
 }
 
 .square h1 {
@@ -62,27 +62,92 @@
 
 @media (min-width: 768px) {
     .geometry {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        min-height: 90vh;
+        min-height: 88vh;
     }
-    
+
     .circle {
-        width: 340px;
-        height: 340px;
+        position: absolute;
+        bottom: 320px;
+        left: 250px;
     }
     
+    .circleList ul {
+        transform: rotate(10deg);
+    }
+
     .square {
-        width: 335px;
-        height: 320px;
+        position: absolute;
+        bottom: 0;
+        left: 77px;
     }
-    
+
     .triangle {
+        position: absolute;
         border-left: 175px solid transparent;
         border-right: 175px solid transparent;
         border-bottom: 350px solid var(--sun);
-        transform: rotate(180deg);
+        bottom: -11px;
+        left: 462px;
+        transform: rotate(160deg);
+    }
+}
+
+    @media (min-width: 1024px) {
+        .circle {
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            bottom: 350px;
+            left: 380px;
+        }
+        
+        .square {
+            position: absolute;
+            width: 365px;
+            height: 350px;
+            bottom: 0;
+            left: 180px;
+        }
+        
+        .triangle {
+            position: absolute;
+            border-left: 175px solid transparent;
+            border-right: 175px solid transparent;
+            border-bottom: 350px solid var(--sun);
+            transform: rotate(160deg);
+            bottom: -11px;
+            left: 595px;
+    }
+}
+
+    @media (min-width: 1240px) {
+        .circle {
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            bottom: 350px;
+            left: 380px;
+        }
+        
+        .circleList ul {
+            transform: rotate(-10deg);
+        }
+
+        .square {
+            position: absolute;
+            width: 365px;
+            height: 350px;
+            bottom: 0;
+            left: 220px;
+        }
+        
+        .triangle {
+            position: absolute;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 500px solid var(--sun);
+            transform: rotate(155deg);
+            bottom: -24px;
+            left: 667px;
     }
 }
