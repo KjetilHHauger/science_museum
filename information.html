@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d6787b096.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <title>Science Museum</title>
 </head>
 <body>
@@ -99,6 +101,39 @@
                 </div>
             </article>
             <div class="triangle">
+                <div id="OSM-map"></div>
+                <script type="text/javascript">var map;
+                var marker = [];
+                var mapOptions = {
+                    scrollWheelZoom: true,
+                };
+                
+                var id = 'OSM-map';
+                
+                centerLatLng = [62.733853784951314, 6.43497465539166];
+                map = L.map(id, mapOptions).setView(centerLatLng, 13);
+                
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'generated with <a href="https://www.osm-generator.com/">osm-generator.com</a> - &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                }).addTo(map);
+                
+                
+                marker = L.marker(
+                    L.latLng(62.73507271497477, 6.439331325020397), {
+                        icon: L.icon({
+                            iconUrl: '/images/icons/home_pin_FILL0_wght400_GRAD0_opsz24.svg',
+                        }),
+                        title: 'Science Museum'
+                    });
+                marker.addTo(map);
+                marker.bindPopup('Science Museum');
+                
+                
+                L.control.bigImage({
+                    position: 'topright'
+                }).addTo(map);
+                
+                </script>
             </div>
         </div>
     </main>
