@@ -69,7 +69,7 @@
 @media (min-width: 768px) {
     .geometry {
         position: relative;
-        bottom: -618px;
+        top: 800px;
     }
 
     .circle {
