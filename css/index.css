@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 0;
 }
 
 .circle {
@@ -236,8 +235,6 @@
     }
 
     .geometry {
-        padding-bottom: 0;
-        top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -250,7 +247,7 @@
         grid-area: circle;
         width: 300px;
         height: 300px;
-        top: 0;
+        bottom: 0;
         left: -290px;
         margin-bottom: 0;
         background-position-x: -274px;
@@ -266,9 +263,9 @@
         grid-area: square;
         height: 70%;
         width: 200px;
-        transform: rotate(164deg);
-        left: -305px;
-        top: 75px;
+        transform: rotate(170deg);
+        left: -319px;
+        bottom: -40px;
     }
     
     @keyframes spaceshipRotate {
@@ -313,7 +310,7 @@
         border-left: 300px solid transparent;
         border-right: 300px solid transparent;
         border-bottom: 600px solid var(--sun);
-        top: 0;
+        bottom: -100px;
         left: -15%;
     }
 
