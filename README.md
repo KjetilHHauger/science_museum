@@ -1,4 +1,4 @@
-# science Museum; a school project
+# Science Museum; a school project
 School project. Make a site for a sience museum
 
 ## Features
