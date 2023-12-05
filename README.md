@@ -15,6 +15,12 @@ School project. Make a site for a sience museum
 - CSS
 - Java Script
 
+## Structure
+- / : Html
+- Assets : Contains static assets
+- Css : Styles
+- JS : Java script
+
 My 4-week website development plan follows a structured approach. Over a 7-day design period, you begin with a day of Lo Fi design, exploring various ideas for mobile presentation. Subsequently, you transition to Mid Fi, blocking out and refining designs for tablets and desktops, with flexibility for adjustments based on on-screen appearance. 
 The Hi Fi wireframe phase prioritizes font, color palette, and active state considerations.
 Post-design, attention shifts to the navbar and footer, pivotal components across all pages.  
