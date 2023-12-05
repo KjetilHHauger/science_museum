@@ -1,6 +1,18 @@
-# science_museum
+# science Museum; a school project
 School project. Make a site for a sience museum
 
+## Features
+- Animation
+- Kid friendly
+- Responsive
+- WCAG
+
+## Technology used
+- Prettier & W3C Validation
+- [Map](https://leafletjs.com/)(https://www.osm-generator.com/)
+- HTML
+- CSS
+- Java Script
 
 My 4-week website development plan follows a structured approach. Over a 7-day design period, you begin with a day of Lo Fi design, exploring various ideas for mobile presentation. Subsequently, you transition to Mid Fi, blocking out and refining designs for tablets and desktops, with flexibility for adjustments based on on-screen appearance. 
 The Hi Fi wireframe phase prioritizes font, color palette, and active state considerations.
