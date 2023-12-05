@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d6787b096.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <title>Science Museum</title>
 </head>
@@ -45,7 +45,7 @@
             <div class="circle">
                 <div class="circleList">
                     <ul>
-                        <li><h3>Contact</h3></li>
+                        <li id="contactClick"><h3>Contact</h3></li>
                         <li><h3>Opening hours</h3></li>
                         <li><h3>Tickets</h3></li>
                         <li><h3>Facilities</h3></li>
@@ -65,7 +65,7 @@
                         <li>
                             <h4>E-mail:</h4>
                             <p>
-                                <a href="mailto:Science@museum.com"science@museum.com>Science@museum.com</a>
+                                <a href="mailto:Science@museum.com">Science@museum.com</a>
                             </p>
                         </li>
                         <li>
@@ -102,7 +102,7 @@
             </article>
             <div class="triangle">
                 <div id="OSM-map"></div>
-                <script type="text/javascript">var map;
+                <script>var map;
                 var marker = [];
                 var mapOptions = {
                     scrollWheelZoom: true,
