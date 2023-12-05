@@ -336,15 +336,15 @@ footer {
     /* Venus */
     .planets img:nth-child(3) {
         height: 40%;
-        top: 45%;
-        left: 45%;
+        top: 40%;
+        left: 40%;
         z-index: 3;
     }
     
     /* Earth */
     .planets img:nth-child(4) {
         height: 40%;
-        top: 60%;
+        top: 55%;
         left: 5%;
         z-index: 4;
     }
