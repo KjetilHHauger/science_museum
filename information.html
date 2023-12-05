@@ -45,15 +45,15 @@
             <div class="circle">
                 <div class="circleList">
                     <ul>
-                        <li id="contactClick"><h3>Contact</h3></li>
-                        <li><h3>Opening hours</h3></li>
-                        <li><h3>Tickets</h3></li>
-                        <li><h3>Facilities</h3></li>
+                        <li id="contactList"><h3>Contact</h3></li>
+                        <li id="openingList"><h3>Opening hours</h3></li>
+                        <li id="ticketsList"><h3>Tickets</h3></li>
+                        <li id="facilitiesList"><h3>Facilities</h3></li>
                     </ul>
                 </div>
             </div>
             <article class="square">
-                <div class="contact">
+                <div id="contact">
                     <h1>Contact</h1>
                     <ul>
                         <li>
@@ -76,7 +76,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="opening">
+                <div id="opening">
                     <h1>Opening hours</h1>
                     <ul>
                         <li>
@@ -99,7 +99,101 @@
                         </li>
                     </ul>
                 </div>
+                <div id="tickets">
+                    <h1>Ticket price</h1>
+                    <ul>
+                        <li>
+                            <h4>Adult</h4>
+                            <p>
+                                200 NOK
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Kids</h4>
+                            <p>
+                                100 NOK
+                            </p>
+                        </li>
+                        <li>
+                            <h4>Family</h4>
+                            <p>
+                                400 NOK
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="facilities">
+                    <h1>Facilities</h1>
+                    <ul>
+                        <li>
+                            <h4>Cafeteria</h4>
+                        </li>
+                        <li>
+                            <h4>Elevator</h4>
+                        </li>
+                        <li>
+                            <h4>Handicap WC</h4>
+                        </li>
+                        <li>
+                            <h4>Handicap parking</h4>
+                        </li>
+                    </ul>
+                </div>
             </article>
+            <!-- <script>
+                document.getElementById("contactList").addEventListener("click", function () {
+                let contact = document.getElementById("contact");
+                let opening = document.getElementById("opening");
+                let tickets = document.getElementById("tickets");
+                let facilities = document.getElementById("facilities")
+                
+                    if 
+                    (contact.style.display === "none" || contact.style.display === "" ){
+                    contact.style.display = "block";
+                    opening.style.display ="none";
+                    tickets.style.display ="none";
+                    facilities.style.display ="none";}
+                });
+                document.getElementById("openingList").addEventListener("click", function () {
+                let contact = document.getElementById("contact");
+                let opening = document.getElementById("opening");
+                let tickets = document.getElementById("tickets");
+                let facilities = document.getElementById("facilities")
+                
+                    if 
+                    (opening.style.display === "none" || opening.style.display === "" ){
+                    contact.style.display = "none";
+                    opening.style.display ="block";
+                    tickets.style.display ="none";
+                    facilities.style.display ="none";}
+                });
+                document.getElementById("ticketsList").addEventListener("click", function () {
+                let contact = document.getElementById("contact");
+                let opening = document.getElementById("opening");
+                let tickets = document.getElementById("tickets");
+                let facilities = document.getElementById("facilities")
+                
+                    if 
+                    (tickets.style.display === "none" || tickets.style.display === "" ){
+                    contact.style.display = "none";
+                    opening.style.display ="none";
+                    tickets.style.display ="block";
+                    facilities.style.display ="none";}
+                });
+                document.getElementById("facilitiesList").addEventListener("click", function () {
+                let contact = document.getElementById("contact");
+                let opening = document.getElementById("opening");
+                let tickets = document.getElementById("tickets");
+                let facilities = document.getElementById("facilities")
+                
+                    if 
+                    (facilities.style.display === "none" || facilities.style.display === "" ){
+                    contact.style.display = "none";
+                    opening.style.display ="none";
+                    tickets.style.display ="none";
+                    facilities.style.display ="block";}
+                });
+            </script> -->
             <div class="triangle">
                 <div id="OSM-map"></div>
                 <script>var map;
@@ -157,5 +251,6 @@
             </div>
         </div>
     </footer> 
+    <script src="js/infoscript.js"></script>
 </body>
 </html>

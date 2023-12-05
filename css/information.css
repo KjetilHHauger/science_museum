@@ -26,6 +26,18 @@
     color: var(--font);
 }
 
+#opening {
+    display: none;
+}
+
+#tickets {
+    display: none;
+}
+
+#facilities {
+    display: none;
+}
+
 .square h1 {
     display: flex;
     justify-content: center;
@@ -69,7 +81,7 @@
 @media (min-width: 768px) {
     .geometry {
         position: relative;
-        top: 800px;
+        bottom: -670px;
     }
 
     .circle {
