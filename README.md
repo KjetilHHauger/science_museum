@@ -9,7 +9,8 @@ School project. Make a site for a sience museum
 
 ## Technology used
 - Prettier & W3C Validation
-- [Map](https://leafletjs.com/)(https://www.osm-generator.com/)
+- Leaflet JS (https://leafletjs.com/)
+- OSM Generator (https://www.osm-generator.com/)
 - HTML
 - CSS
 - Java Script
