@@ -8,6 +8,7 @@
     min-width: 320px;
     height: 30vh;
     background-color: var(--fontBg);
+    color: var(--font);
 }
 
 .solarInfo h1 {
@@ -22,11 +23,33 @@
     font-size: 1rem;
 }
 
-.sunText {
+#solarText {
+    
+}
+
+#solarText p {
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sunText {
     display: none;
 }
 
-.mercuryText {
+#mercuryText {
+    display: none;
+}
+
+#venusText {
+    display: none;
+}
+
+#earthText {
+    display: none;
+}
+
+#marsText {
     display: none;
 }
 
