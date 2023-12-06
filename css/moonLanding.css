@@ -12,8 +12,9 @@
     justify-content: center;
     animation: landing;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .landingSpaceship img {
@@ -29,8 +30,7 @@
 .landingMoon  img {
     position: absolute;
     width: 80%;
-    bottom: -90px;
-    transform: rotate(100deg);
+    bottom: -15px;
     z-index: -1;
 }
 
