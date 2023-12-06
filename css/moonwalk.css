@@ -1,25 +1,24 @@
 .vrWalkInfo {
+    display: flex;
+    flex-direction: column;
     background-color: var(--fontBg);
-    height: 384px;
+    height: 60vh;
     width: 90vw;
     color: var(--font);
-    margin: 20px auto 0 auto;
+    margin: 8px auto 0 auto;
 }
 
 .vrWalkInfo h1 {
-    font-size: 2rem;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
+    margin: 0;
+    align-self: center;
 }
 
 .vrWalkInfo p {
-    font-size: 1rem;
-    font-family: 'Expletus Sans', sans-serif;
-    text-align: center;
+    margin: 8px;
 }
 
 .vrWalk {
-    background-image: url(/images/mobile/exhibitionBgMobile.webp);
+    background-image: url(/assets/images/mobile/exhibitionBgMobile.webp);
     background-repeat: repeat;
     position: relative;
     min-height: 70vh;

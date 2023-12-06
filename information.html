@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/information.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/favicon-512x512.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon//favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/favicon-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon//favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon//favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d6787b096.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
@@ -24,7 +24,7 @@
         <nav class="navbar">
             <div class="navbarLogo">
                 <a href="index.html">
-                    <img src="images/logo.webp" alt="Science museum logo">
+                    <img src="assets/images/logo.webp" alt="Science museum logo">
                 </a>
             </div>
             <ul>
@@ -140,60 +140,6 @@
                     </ul>
                 </div>
             </article>
-            <!-- <script>
-                document.getElementById("contactList").addEventListener("click", function () {
-                let contact = document.getElementById("contact");
-                let opening = document.getElementById("opening");
-                let tickets = document.getElementById("tickets");
-                let facilities = document.getElementById("facilities")
-                
-                    if 
-                    (contact.style.display === "none" || contact.style.display === "" ){
-                    contact.style.display = "block";
-                    opening.style.display ="none";
-                    tickets.style.display ="none";
-                    facilities.style.display ="none";}
-                });
-                document.getElementById("openingList").addEventListener("click", function () {
-                let contact = document.getElementById("contact");
-                let opening = document.getElementById("opening");
-                let tickets = document.getElementById("tickets");
-                let facilities = document.getElementById("facilities")
-                
-                    if 
-                    (opening.style.display === "none" || opening.style.display === "" ){
-                    contact.style.display = "none";
-                    opening.style.display ="block";
-                    tickets.style.display ="none";
-                    facilities.style.display ="none";}
-                });
-                document.getElementById("ticketsList").addEventListener("click", function () {
-                let contact = document.getElementById("contact");
-                let opening = document.getElementById("opening");
-                let tickets = document.getElementById("tickets");
-                let facilities = document.getElementById("facilities")
-                
-                    if 
-                    (tickets.style.display === "none" || tickets.style.display === "" ){
-                    contact.style.display = "none";
-                    opening.style.display ="none";
-                    tickets.style.display ="block";
-                    facilities.style.display ="none";}
-                });
-                document.getElementById("facilitiesList").addEventListener("click", function () {
-                let contact = document.getElementById("contact");
-                let opening = document.getElementById("opening");
-                let tickets = document.getElementById("tickets");
-                let facilities = document.getElementById("facilities")
-                
-                    if 
-                    (facilities.style.display === "none" || facilities.style.display === "" ){
-                    contact.style.display = "none";
-                    opening.style.display ="none";
-                    tickets.style.display ="none";
-                    facilities.style.display ="block";}
-                });
-            </script> -->
             <div class="triangle">
                 <div id="OSM-map"></div>
                 <script>var map;
@@ -215,7 +161,7 @@
                 marker = L.marker(
                     L.latLng(62.73507271497477, 6.439331325020397), {
                         icon: L.icon({
-                            iconUrl: '/images/icons/home_pin_FILL0_wght400_GRAD0_opsz24.svg',
+                            iconUrl: 'assets/images/icons/home_pin_FILL0_wght400_GRAD0_opsz24.svg',
                         }),
                         title: 'Science Museum'
                     });
@@ -225,8 +171,7 @@
                 
                 L.control.bigImage({
                     position: 'topright'
-                }).addTo(map);
-                
+                }).addTo(map);            
                 </script>
             </div>
         </div>
