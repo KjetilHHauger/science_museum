@@ -1,13 +1,46 @@
+.infoBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--fontBg);
+    height: 40vh;
+    width: 90vw;
+    color: var(--font);
+    margin: 8px auto 0 auto;
+}
+
+.infoBox h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#infoRocket {
+    display: none;
+}
+
+#infoMoon {
+    display: none;
+}
+
+#infoRocket h2, #infoMoon h2 {
+    text-align: center;
+    margin: 8px 0 0 0;
+}
+
+#infoRocket p, #infoMoon p {
+    margin: 8px;
+}
+
 @keyframes landing {
     from {
         transform: translateY(0);
     }
     to {
-        transform: translateY(370px);
+        transform: translateY(130px);
     }
 }
 
-.landingSpaceship {
+#landingSpaceship {
     display: flex;
     justify-content: center;
     animation: landing;
@@ -17,25 +50,22 @@
     animation-fill-mode: forwards;
 }
 
-.landingSpaceship img {
+#landingSpaceship img {
     width: 20%;
     z-index: -1;
 }
 
-.landingMoon {
+#landingMoon {
     display: flex;
     justify-content: center;
+    height: 200px;
 }
 
-.landingMoon  img {
+#landingMoon img {
     position: absolute;
     width: 80%;
     bottom: -15px;
     z-index: -1;
-}
-
-.infoBox {
-    display: none;
 }
 
 @media (min-width: 425px) {
@@ -48,41 +78,12 @@
         }
     }
 
-    .landingMoon  img {
+    #landingMoon  img {
         bottom: -160px;
     }
 }
 
 @media (min-width: 768px) {
-    @keyframes landing {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(360px);
-        }
-    }
-
-    .landingSpaceship {
-        display: flex;
-        justify-content: left;
-        padding-left: 22%;
-    }
-
-    .landingSpaceship img {
-        width: 20%;
-    }
-    
-    .landingMoon {
-        display: flex;
-        justify-content: left;
-    }
-
-    .landingMoon  img {
-        width: 60%;
-        bottom: -260px;
-    }
-
     .infoBox {
         position: absolute;
         display: block;
@@ -92,9 +93,48 @@
         right: 16px;
         top: 114px;
     }
+    
+    @keyframes landing {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(360px);
+        }
+    }
+
+    #landingSpaceship {
+        display: flex;
+        justify-content: left;
+        padding-left: 22%;
+    }
+
+    #landingSpaceship img {
+        width: 20%;
+    }
+    
+    #landingMoon {
+        display: flex;
+        justify-content: left;
+    }
+
+    #landingMoon  img {
+        width: 60%;
+        bottom: -260px;
+    }
 }
 
 @media (min-width: 1024px) {
+    .infoBox {
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 595px;
+        background-color: var(--fontBg);
+        right: 16px;
+        top: 114px;
+    }
+    
     @keyframes landing {
         from {
             transform: translateY(0);
@@ -104,26 +144,28 @@
         }
     }
 
-    .landingSpaceship {
+    #landingSpaceship {
         display: flex;
         justify-content: left;
         padding-left: 23%;
     }
 
-    .landingSpaceship img {
+    #landingSpaceship img {
         width: 20%;
     }
     
-    .landingMoon {
+    #landingMoon {
         display: flex;
         justify-content: left;
     }
 
-    .landingMoon  img {
+    #landingMoon  img {
         width: 60%;
         bottom: -360px;
     }
+}
 
+@media (min-width: 1440px) {
     .infoBox {
         position: absolute;
         display: block;
@@ -133,9 +175,7 @@
         right: 16px;
         top: 114px;
     }
-}
-
-@media (min-width: 1440px) {
+    
     @keyframes landing {
         from {
             transform: translateY(0);
@@ -145,33 +185,23 @@
         }
     }
 
-    .landingSpaceship {
+    #landingSpaceship {
         display: flex;
         justify-content: left;
         padding-left: 30%;
     }
 
-    .landingSpaceship img {
+    #landingSpaceship img {
         width: 15%;
     }
     
-    .landingMoon {
+    #landingMoon {
         display: flex;
         justify-content: left;
     }
 
-    .landingMoon  img {
+    #landingMoon  img {
         width: 70%;
         bottom: -700px;
-    }
-
-    .infoBox {
-        position: absolute;
-        display: block;
-        width: 400px;
-        height: 595px;
-        background-color: var(--fontBg);
-        right: 16px;
-        top: 114px;
     }
 }
