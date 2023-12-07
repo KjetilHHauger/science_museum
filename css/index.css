@@ -241,6 +241,7 @@
         grid-template-areas:
         "triangle . square"
         "triangle circle square";
+        top: -150px;
     }
 
     .circle {
@@ -261,11 +262,11 @@
     .square {
         position: relative;
         grid-area: square;
-        height: 70%;
+        height: 50%;
         width: 200px;
         transform: rotate(170deg);
-        left: -319px;
-        bottom: -40px;
+        left: -307px;
+        bottom: -150px;
     }
     
     @keyframes spaceshipRotate {
