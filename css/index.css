@@ -241,15 +241,15 @@
         grid-template-areas:
         "triangle . square"
         "triangle circle square";
-        top: -150px;
+        top: -200px;
     }
 
     .circle {
         grid-area: circle;
         width: 300px;
         height: 300px;
-        bottom: 0;
-        left: -290px;
+        bottom: -130px;
+        left: -138px;
         margin-bottom: 0;
         background-position-x: -274px;
     }
@@ -265,7 +265,7 @@
         height: 50%;
         width: 200px;
         transform: rotate(170deg);
-        left: -307px;
+        left: -157px;
         bottom: -150px;
     }
     
@@ -308,63 +308,128 @@
     .triangle {
         grid-area: triangle;
         transform: rotate(190deg);
-        border-left: 300px solid transparent;
-        border-right: 300px solid transparent;
-        border-bottom: 600px solid var(--sun);
-        bottom: -100px;
-        left: -15%;
-    }
-
-    .triangle img:nth-child(1) {
-        width: 333px;
-        height: 270px;
-        top: 343px;
-        left: -65px;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 400px solid var(--sun);
+        bottom: -190px;
+        left: -30px;
     }
     
+    /* Sun */
+    .triangle img:nth-child(1) {
+        width: 300px;
+        height: 240px;
+        top: 200px;
+        left: -85px;
+    }
+    
+    /* Earth */
     .triangle img:nth-child(2) {
         width: 276px;
-        height: 206px;
-        top: 17px;
+        height: 226px;
+        top: 0;
         left: -132px;
     }
     
+    /* Mars */
     .triangle img:nth-child(3) {
         width: 159px;
-        height: 122px;
+        height: 128px;
         top: 346px;
         left: -248px;
     }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
+    .geometry {
+        top: -100px;
+        left: 50px;
+    }
+
     .circle {
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         top: 0;
-        left: -340px;
-        background-position-x: -489px;
+        left: -250px;
+        background-position-x: -400px;
     }
 
     .square {
-        width: 400px;
+        width: 250px;
         height: 70%;
         transform: rotate(154deg);
-        left: -361px;
+        left: -261px;
         top: 97px;
     }
 
     .square img {
-        width: 188px;
-        height: 362px;
+        width: 158px;
+        height: 302px;
+        left: 57px;
+    }
+
+    .triangle {
+        transform: rotate(190deg);
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+        border-bottom: 500px solid var(--sun);
+        top: 86px;
+        left: -120px;
+    }
+
+    /* Sun */
+    .triangle img:nth-child(1) {
+        width: 333px;
+        height: 270px;
+        top: 261px;
+        left: -110px;
+    }
+    
+    /* Earth */
+    .triangle img:nth-child(2) {
+        width: 306px;
+        height: 237px;
+        top: 26px;
+        left: -132px;
+    }
+
+    /* Mars */
+    .triangle img:nth-child(3) {
+        width: 225px;
+        height: 172px;
+        top: 372px;
+        left: -298px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .circle {
+        width: 400px;
+        height: 400px;
+        top: 0;
+        left: -250px;
+        background-position-x: -400px;
+    }
+
+    .square {
+        width: 300px;
+        height: 70%;
+        transform: rotate(154deg);
+        left: -261px;
+        top: 97px;
+    }
+
+    .square img {
+        width: 158px;
+        height: 302px;
         left: 107px;
     }
 
     .triangle {
         transform: rotate(190deg);
-        border-left: 400px solid transparent;
-        border-right: 400px solid transparent;
-        border-bottom: 800px solid var(--sun);
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+        border-bottom: 600px solid var(--sun);
         top: 86px;
         left: -15%;
     }
@@ -372,8 +437,8 @@
     .triangle img:nth-child(1) {
         width: 333px;
         height: 270px;
-        top: 561px;
-        left: 1px;
+        top: 361px;
+        left: -20px;
     }
     
     .triangle img:nth-child(2) {
@@ -395,22 +460,22 @@
     .circle {
         width: 500px;
         height: 500px;
-        top: 0;
-        left: -340px;
+        top: -30px;
+        left: -360px;
     }
 
     .square {
-        width: 400px;
+        width: 330px;
         height: 70%;
         transform: rotate(157deg);
-        left: -363px;
+        left: -403px;
         top: 97px;
     }
 
     .square img {
         width: 188px;
         height: 362px;
-        left: 107px;
+        left: 80px;
     }
 
     .triangle {
@@ -441,5 +506,56 @@
         height: 181px;
         top: 494px;
         left: -267px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .geometry {
+        top: -50px;
+        left: 200px;
+    }
+
+    .circle {
+        width: 600px;
+        height: 600px;
+        top: -30px;
+        left: 15px;
+    }
+
+    .square {
+        left: -273px;
+        top: 97px;
+    }
+
+    .triangle {
+        border-left: 400px solid transparent;
+        border-right: 400px solid transparent;
+        border-bottom: 800px solid var(--sun);
+        top: 86px;
+        left: 300px;
+    }
+
+    /* Sun */
+    .triangle img:nth-child(1) {
+        width: 563px;
+        height: 480px;
+        top: 509px;
+        left: 18px;
+    }
+    
+    /* Earth */
+    .triangle img:nth-child(2) {
+        width: 476px;
+        height: 400px;
+        top: 81px;
+        left: -132px;
+    }
+    
+    /* Mars */
+    .triangle img:nth-child(3) {
+        width: 332px;
+        height: 281px;
+        top: 494px;
+        left: -367px;
     }
 }
