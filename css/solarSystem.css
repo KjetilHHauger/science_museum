@@ -309,12 +309,14 @@ footer {
     }
     
     .cloudsDesktop img:nth-child(2) {
+        display: none;
         z-index: 5;
         bottom: 97px;
         height: 200px;
     }
     
     .cloudsDesktop img:nth-child(3) {
+        display: none;
         z-index: 3;
         bottom: 121px;
         height: 300px;
@@ -322,7 +324,7 @@ footer {
     
     .cloudsDesktop img:nth-child(4) {
         z-index: 1;
-        bottom: 157px;
+        bottom: -50px;
     }
 
     .planets img {
@@ -333,10 +335,15 @@ footer {
         padding-top: 170px;
         font-size: 4rem;
     }
+
+    #sunText h2 {
+        font-size: 3rem;
+    }
     
     /* Sun */
     .planets img:nth-child(1) {
         height: 30%;
+        top: 30%;
     }
     
     /* Mercury */

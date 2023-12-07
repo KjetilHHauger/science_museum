@@ -24,7 +24,8 @@ document.getElementById("mercury").addEventListener("click", function () {
     mercuryText.style.display ="block";
     venusText.style.display ="none";
     earthText.style.display ="none";
-    marsText.style.display ="none";}
+    marsText.style.display ="none";
+    solarText.style.display ="none";}
 });
 
 document.getElementById("venus").addEventListener("click", function () {
@@ -35,7 +36,8 @@ document.getElementById("venus").addEventListener("click", function () {
     mercuryText.style.display ="none";
     venusText.style.display ="block";
     earthText.style.display ="none";
-    marsText.style.display ="none";}
+    marsText.style.display ="none";
+    solarText.style.display ="none";}
 });
 
 document.getElementById("earth").addEventListener("click", function () {
@@ -46,7 +48,8 @@ document.getElementById("earth").addEventListener("click", function () {
     mercuryText.style.display ="none";
     venusText.style.display ="none";
     earthText.style.display ="block";
-    marsText.style.display ="none";}
+    marsText.style.display ="none";
+    solarText.style.display ="none";}
 });
 
 document.getElementById("mars").addEventListener("click", function () {
@@ -57,5 +60,6 @@ document.getElementById("mars").addEventListener("click", function () {
     mercuryText.style.display ="none";
     venusText.style.display ="none";
     earthText.style.display ="none";
-    marsText.style.display ="block";}
+    marsText.style.display ="block";
+    solarText.style.display ="none";}
 });
