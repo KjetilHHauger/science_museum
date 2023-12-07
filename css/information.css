@@ -117,6 +117,10 @@
 }
 
     @media (min-width: 1024px) {
+        .geometry {
+            bottom: -700px;
+            left: -100px;
+        }
         .circle {
             position: absolute;
             width: 340px;
@@ -144,10 +148,13 @@
 }
 
     @media (min-width: 1240px) {
+        .geometry {
+            bottom: -720px;
+        }
         .circle {
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 400px;
+            height: 400px;
             bottom: 320px;
             left: 415px;
         }
@@ -158,18 +165,18 @@
 
         .square {
             position: absolute;
-            width: 345px;
-            height: 330px;
-            bottom: -10px;
-            left: 220px;
+            width: 445px;
+            height: 430px;
+            bottom: -110px;
+            left: 200px;
         }
         
         .triangle {
             position: absolute;
-            height: 500px;
-            width: 500px;
+            height: 600px;
+            width: 600px;
             transform: rotate(150deg);
-            bottom: -44px;
-            left: 656px;
+            bottom: -104px;
+            left: 756px;
     }
 }
