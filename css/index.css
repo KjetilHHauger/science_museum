@@ -468,7 +468,7 @@
         width: 330px;
         height: 70%;
         transform: rotate(157deg);
-        left: -403px;
+        left: -px;
         top: 97px;
     }
 
@@ -519,12 +519,12 @@
         width: 600px;
         height: 600px;
         top: -30px;
-        left: 15px;
+        left: -345px;
     }
 
     .square {
-        left: -273px;
         top: 97px;
+        left: -375px;
     }
 
     .triangle {
@@ -532,7 +532,6 @@
         border-right: 400px solid transparent;
         border-bottom: 800px solid var(--sun);
         top: 86px;
-        left: 300px;
     }
 
     /* Sun */

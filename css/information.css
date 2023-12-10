@@ -82,7 +82,8 @@
 @media (min-width: 768px) {
     .geometry {
         position: relative;
-        bottom: -670px;
+        bottom: -870px;
+        left: 90px;
     }
 
     .circle {
@@ -118,8 +119,8 @@
 
     @media (min-width: 1024px) {
         .geometry {
-            bottom: -700px;
-            left: -100px;
+            bottom: -850px;
+            left: 50px;
         }
         .circle {
             position: absolute;
@@ -149,7 +150,8 @@
 
     @media (min-width: 1240px) {
         .geometry {
-            bottom: -720px;
+            bottom: -820px;
+            left: 200px;
         }
         .circle {
             position: absolute;

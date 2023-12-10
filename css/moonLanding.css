@@ -31,12 +31,17 @@
     margin: 8px;
 }
 
+.moonLandingBox {
+    position: relative;
+    height: 38vh;
+}
+
 @keyframes landing {
     from {
-        transform: translateY(0);
+        transform: translateY(25vh);
     }
     to {
-        transform: translateY(130px);
+        transform: translateY(0);
     }
 }
 
@@ -56,30 +61,26 @@
 }
 
 #landingMoon {
-    display: flex;
-    justify-content: center;
-    height: 200px;
+    height: 450px;
 }
 
 #landingMoon img {
     position: absolute;
-    width: 80%;
-    bottom: -15px;
+    bottom: -120px;
+    left: 20px;
+    width: 90vw;
+    height: 15vh;
     z-index: -1;
 }
 
 @media (min-width: 425px) {
     @keyframes landing {
         from {
-            transform: translateY(0);
+            transform: translateY(25vh);
         }
         to {
-            transform: translateY(420px);
+            transform: translateY(0);
         }
-    }
-
-    #landingMoon  img {
-        bottom: -160px;
     }
 }
 
@@ -99,14 +100,14 @@
             transform: translateY(0);
         }
         to {
-            transform: translateY(360px);
+            transform: translateY(65vh);
         }
     }
 
     #landingSpaceship {
         display: flex;
         justify-content: left;
-        padding-left: 22%;
+        padding-left: 25%;
     }
 
     #landingSpaceship img {
@@ -114,13 +115,13 @@
     }
     
     #landingMoon {
-        display: flex;
-        justify-content: left;
+        height: 178px;
+        margin-top: 727px;
     }
 
     #landingMoon  img {
         width: 60%;
-        bottom: -260px;
+        bottom: -660px;
     }
 }
 
@@ -155,10 +156,13 @@
     }
     
     #landingMoon {
-        display: flex;
-        justify-content: left;
+        margin-top: 0;
+        position: absolute;
+        bottom: -276px;
+        left: 0;
+        width: 90vw;
     }
-
+    
     #landingMoon  img {
         width: 60%;
         bottom: -360px;
