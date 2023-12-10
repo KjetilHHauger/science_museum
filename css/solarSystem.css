@@ -1,6 +1,7 @@
 .solarSystemBox {
     position: relative;
     min-height: 100vh;
+    background-image: url(/assets/images/desktop/exhibitionBackgroundDesktop.webp);
 }
 
 .solarInfo {
@@ -22,7 +23,7 @@
 }
 
 #solarText h1 {
-    padding-top: 100px;
+    padding-top: 200px;
     text-align: center;
     margin: 0;
 }
@@ -217,6 +218,11 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .solarInfo {
+        height: 32vh;
+        padding-top: 100px;
+    }
+
     .cloudsMobile {
         display: none;
     }
@@ -261,20 +267,20 @@ footer {
     /* Sun */
     .planets img:nth-child(1) {
         height: 25%;
-        top: 40%;
+        top: 30%;
     }
     
     /* Mercury */
     .planets img:nth-child(2) {
         height: 18%;
-        top: 50%;
-        left: 27%;
+        top: 40%;
+        left: 37%;
     }
     
     /* Venus */
     .planets img:nth-child(3) {
         height: 25%;
-        top: 60%;
+        top: 50%;
         left: 10%;
         z-index: 3;
     }
@@ -298,6 +304,16 @@ footer {
 }
 
 @media (min-width: 1240px) {
+    .solarInfo {
+        position: absolute;
+        display: block;
+        width: 400px;
+        min-height: 100vh;
+        background-color: var(--fontBg);
+        right: 16px;
+        top: 0;
+    }
+    
      .cloudsMobile {
         display: none;
     }
@@ -343,37 +359,37 @@ footer {
     /* Sun */
     .planets img:nth-child(1) {
         height: 30%;
-        top: 30%;
+        top: 0;
     }
     
     /* Mercury */
     .planets img:nth-child(2) {
         height: 22%;
-        top: 35%;
-        left: 40%;
+        top: 18%;
+        left: 26%;
     }
     
     /* Venus */
     .planets img:nth-child(3) {
         height: 30%;
-        top: 50%;
-        left: 50%;
+        top: 31%;
+        left: 29%;
         z-index: 3;
     }
     
     /* Earth */
     .planets img:nth-child(4) {
         height: 30%;
-        top: 55%;
-        left: 15%;
+        top: 52%;
+        left: 4%;
         z-index: 4;
     }
     
     /* Mars */
     .planets img:nth-child(5) {
         height: 25%;
-        top: 75%;
-        left: 60%;
+        top: 64%;
+        left: 40%;
         z-index: 8;
     }   
 }
