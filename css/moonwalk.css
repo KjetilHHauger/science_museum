@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--fontBg);
-    height: 30vh;
+    height: 400px;
     width: 90vw;
     color: var(--font);
     margin: 8px auto 0 auto;
@@ -22,15 +22,15 @@
     background-image: url(/assets/images/mobile/exhibitionBgMobile.webp);
     background-repeat: repeat;
     position: relative;
-    min-height: 90vh;
+    min-height: 50vh;
 }
 
 /* Mars */
 .vrWalk img:nth-child(1) {
     position: absolute;
-    width: 30%;
+    width: 120px;
     left: 10%;
-    bottom: 90%;
+    bottom: 35vh;
     animation: mars;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -52,9 +52,9 @@
 /* Mercury */
 .vrWalk img:nth-child(4) {
     position: absolute;
-    width: 30%;
-    left: 50%;
-    bottom: 75%;
+    width: 150px;
+    left: 40%;
+    bottom: 35vh;
     animation: mercury;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -82,17 +82,17 @@
 /* Astronaut */
 .vrWalk img:nth-child(3) {
     position: absolute;
-    width: 50%;
+    width: 180px;
     left: 2%;
-    bottom: 60%;
+    bottom: 20vh;
 }
 
 /* Venus */
 .vrWalk img:nth-child(2) {
     position: absolute;
-    width: 60%;
-    left: 30%;
-    bottom: 50%;
+    width: 230px;
+    left: 40vw;
+    bottom: 20vh;
     animation: venus;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -120,9 +120,9 @@
 /* Sun */
 .vrWalk img:nth-child(5) {
     position: absolute;
-    width: 70%;
+    width: 280px;
     left: 8%;
-    bottom: 25%;
+    bottom: 5vh;
     animation: sun;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -145,31 +145,40 @@ footer {
     z-index: 10;
 }
 
+@media (max-width: 359px) {
+    .vrWalkInfo {
+        height: 550px;
+    }
+
+    
+}
+
 @media (min-width: 580px) {
+    .vrWalkInfo {
+        height: 300px;
+    }
+
     /* Mars */
     .vrWalk img:nth-child(1) {
         left: 10%;
-        width: 15%;
+        bottom: 35vh;
     }
     
     /* Venus */
     .vrWalk img:nth-child(2) {
-        left: 40%;
-        width: 55%;
-        bottom: 40%;
+        left: 50%;
     }
     
     /* Astronaut */
     .vrWalk img:nth-child(3) {
-        bottom: 40%;
+        bottom: 20vh;
     }
 
     /* Sun */
     .vrWalk img:nth-child(5) {
-        width: 70%;
         left: 18%;
-        bottom: 5%;
-}
+        bottom: 2vh;
+    }
 }
 
 @media (min-width: 768px) {
@@ -181,7 +190,6 @@ footer {
     /* Venus */
     .vrWalk img:nth-child(2) {
         left: 45%;
-        bottom: 40%;
     }
     
     /* Astronaut */
@@ -191,128 +199,131 @@ footer {
 
     /* Mercury */
     .vrWalk img:nth-child(4) {
-        width: 30%;
         left: 40%;
-        bottom: 70%;
     }
 
     /* Sun */
     .vrWalk img:nth-child(5) {
-        width: 70%;
         left: 20%;
-        bottom: 0;
     }
 }
 
 @media (min-width: 1024px) {
+    .vrWalk {
+        min-height: 80vh;
+    }
+
     .vrWalkInfo {
         position: absolute;
         display: block;
         width: 400px;
-        height: 40vh;
+        height: 400px;
         right: 16px;
         top: 86px;
     }
 
     /* Mars */
     .vrWalk img:nth-child(1) {
-        width: 10%;
+        width: 200px;
         left: 8%;
-        bottom: 80%;
-    }
-    
-    /* Venus */
-    .vrWalk img:nth-child(2) {
-        width: 30%;
-        left: 60%;
-        bottom: 20%;
-    }
-    
-    /* Astronaut */
-    .vrWalk img:nth-child(3) {
-        bottom: 25%;
+        bottom: 60vh;
     }
 
     /* Mercury */
     .vrWalk img:nth-child(4) {
-        width: 20%;
+        width: 210px;
         left: 40%;
-        bottom: 60%;
+        bottom: 50vh;
+    }
+    
+    /* Astronaut */
+    .vrWalk img:nth-child(3) {
+        width: 400px;
+        bottom: 20vh;
+    }
+
+
+    /* Venus */
+    .vrWalk img:nth-child(2) {
+        width: 350px;
+        left: 60%;
+        bottom: 18vh;
     }
 
     /* Sun */
     .vrWalk img:nth-child(5) {
-        width: 50%;
+        width: 500px;
         left: 20%;
-        bottom: -10%;
+        bottom: -5vh;
     }
 }
 
 @media (min-width: 1240px) {
     /* Mars */
        .vrWalk img:nth-child(1) {
-        width: 20%;
-        left: 8%;
-        bottom: 80%;
+        left: 8vw;
+        bottom: 60vh;
     }
     
     /* Venus */
     .vrWalk img:nth-child(2) {
-        width: 30%;
-        left: 60%;
-        bottom: 20%;
+        width: 400px;
+        left: 60vw;
+        bottom: 20vh;
     }
     
     /* Astronaut */
     .vrWalk img:nth-child(3) {
-        width: 40%;
-        bottom: 35%;
+        bottom: 30vh;
     }
 
     /* Mercury */
     .vrWalk img:nth-child(4) {
-        width: 20%;
+        width: 250px;
         left: 40%;
         bottom: 60%;
     }
 
     /* Sun */
     .vrWalk img:nth-child(5) {
-        width: 50%;
-        left: 20%;
-        bottom: 0;
+        width: 600px;
+        left: 20vw;
+        bottom: -5vh;
     }
 }
 
 @media (min-width: 1540px) {
     /* Mars */
     .vrWalk img:nth-child(1) {
-        width: 15%;
-        left: 8%;
-        bottom: 80%;
+        width: 300px;
+        left: 20vw;
+        bottom: 55vh;
     }
 
    /* Venus */
     .vrWalk img:nth-child(2) {
-        left: 55%;
+        width: 400px;
+        left: 70vw;
+        bottom: 20vh;
     }
     
     /* Astronaut */
     .vrWalk img:nth-child(3) {
-        width: 30%;
-        bottom: 30%;
+        width: 400px;
+        bottom: 30vh;
     }
 
     /* Mercury */
     .vrWalk img:nth-child(4) {
-        left: 40%;
-        bottom: 50%;
+        width: 300px;
+        left: 50vw;
+        bottom: 45vh;
     }
 
     /* Sun */
     .vrWalk img:nth-child(5) {
-        width: 40%;
-        left: 15%;
-        bottom: 0;
+        width: 600px;
+        left: 20vw;
+        bottom: -5vh;
     }
 }

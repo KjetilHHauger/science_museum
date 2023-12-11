@@ -20,10 +20,6 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    min-height: 88vh;
-}
-
 h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2rem;

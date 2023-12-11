@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 90vh;
 }
 
 .circle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 340px;
-    height: 340px;
+    min-width: 340px;
+    min-height: 340px;
     background-color: var(--sky);
     border-radius: 50%;
 }
@@ -21,8 +22,8 @@
 }
 
 .square {
-    width: 335px;
-    height: 320px;
+    min-width: 335px;
+    min-height: 320px;
     background-color: var(--peach);
     color: var(--font);
 }
@@ -68,28 +69,29 @@
 }
 
 .triangle {
-    height: 350px;
-    width: 350px;
+    min-height: 350px;
+    min-width: 350px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-color: var(--sun);
 }
 
 #OSM-map {
     width: 100%;
-    height: 100%;
+    height: 350px;
+    transform: translate3d(0px, 2px, 0px);
 }
 
 @media (min-width: 768px) {
     .geometry {
         position: relative;
-        bottom: -870px;
-        left: 90px;
+        top: 100px;
+        min-height: 80vh;
     }
 
     .circle {
         position: absolute;
-        bottom: 320px;
-        left: 250px;
+        bottom: 440px;
+        left: 154px;
     }
     
     .circleList ul {
@@ -98,67 +100,71 @@
 
     .square {
         position: absolute;
-        bottom: 0;
-        left: 77px;
+        bottom: 120px;
+        left: 20px;
     }
 
     .triangle {
         position: absolute;
-        height: 350px;
-        width: 350px;
-        bottom: -11px;
-        left: 462px;
+        height: 400px;
+        width: 400px;
+        bottom: 120px;
+        left: 412px;
         transform: rotate(160deg);
         overflow: hidden;
     }
 
     #OSM-map {
-        transform: rotate(180deg);
+        width: 744px;
+        height: 1044px;
+        transform: translate3d(130px, 295px, 0px);
+        rotate: 180deg;
     }
 }
 
     @media (min-width: 1024px) {
         .geometry {
-            bottom: -850px;
-            left: 50px;
+            overflow: hidden;
         }
+
         .circle {
-            position: absolute;
-            width: 340px;
             height: 340px;
-            bottom: 350px;
-            left: 380px;
+            top: 140px;
+            left: 184px;
         }
         
         .square {
-            position: absolute;
             width: 365px;
             height: 350px;
-            bottom: 0;
-            left: 180px;
+            top: 480px;
+            left: 20px;
         }
         
         .triangle {
-            position: absolute;
             height: 450px;
             width: 450px;
-            transform: rotate(160deg);
-            bottom: -24px;
-            left: 608px;
+            top: 390px;
+            left: 448px;
+    }
+
+        #OSM-map {
+            width: 744px;
+            height: 1044px;
+            transform: translate3d(130px, 295px, 0px);
+            rotate: 180deg;
     }
 }
 
-    @media (min-width: 1240px) {
+    @media (min-width: 1240px) { 
         .geometry {
-            bottom: -820px;
-            left: 200px;
+            overflow: hidden;
         }
+
         .circle {
-            position: absolute;
             width: 400px;
             height: 400px;
-            bottom: 320px;
-            left: 415px;
+            top: 0;
+            left: 230px;
         }
         
         .circleList ul {
@@ -166,19 +172,25 @@
         }
 
         .square {
-            position: absolute;
             width: 445px;
             height: 430px;
-            bottom: -110px;
-            left: 200px;
+            top: 400px;
+            left: 20px;
         }
         
         .triangle {
             position: absolute;
             height: 600px;
             width: 600px;
-            transform: rotate(150deg);
-            bottom: -104px;
-            left: 756px;
+            transform: rotate(155deg);
+            top: 250px;
+            left: 564px;
+    }
+
+        #OSM-map {
+            width: 744px;
+            height: 1044px;
+            transform: translate3d(80px, 195px, 0px);
+            rotate: 180deg;
     }
 }

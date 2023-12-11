@@ -1,13 +1,13 @@
 .solarSystemBox {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
     background-image: url(/assets/images/desktop/exhibitionBackgroundDesktop.webp);
 }
 
 .solarInfo {
     margin: 8px;
     min-width: 320px;
-    height: 42vh;
+    height: 320px;
     background-color: var(--fontBg);
     color: var(--font);
 }
@@ -23,7 +23,6 @@
 }
 
 #solarText h1 {
-    padding-top: 200px;
     text-align: center;
     margin: 0;
 }
@@ -219,8 +218,7 @@ footer {
 
 @media (min-width: 768px) {
     .solarInfo {
-        height: 32vh;
-        padding-top: 100px;
+        height: 150px;
     }
 
     .cloudsMobile {
@@ -348,11 +346,10 @@ footer {
     }
 
     #solarText h1 {
-        padding-top: 170px;
         font-size: 4rem;
     }
 
-    #sunText h2 {
+    #sunText h2, #mercuryText h2, #venusText h2, #earthText h2, #marsText h2 {
         font-size: 3rem;
     }
     
