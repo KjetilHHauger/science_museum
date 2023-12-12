@@ -17,10 +17,10 @@
 - Java Script
 
 ## Structure
-- [/](https://github.com/KjetilHHauger/science_museum) : Html
-- [Assets](https://github.com/KjetilHHauger/science_museum/tree/main/assets) : Contains static assets
-- [CSS](https://github.com/KjetilHHauger/science_museum/tree/main/css) : Styles
-- [JS](https://github.com/KjetilHHauger/science_museum/tree/main/js) : Java script
+- [`/`](https://github.com/KjetilHHauger/science_museum) : HTML
+- [`assets`](https://github.com/KjetilHHauger/science_museum/tree/main/assets) : Contains static assets
+- [`css`](https://github.com/KjetilHHauger/science_museum/tree/main/css) : Styles
+- [`js`](https://github.com/KjetilHHauger/science_museum/tree/main/js) : Java script
 
 ### Introduction
 
