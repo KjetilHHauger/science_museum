@@ -1,13 +1,13 @@
 .solarSystemBox {
     position: relative;
-    min-height: 90vh;
+    min-height: 800px;
     background-image: url(/assets/images/desktop/exhibitionBackgroundDesktop.webp);
 }
 
 .solarInfo {
     margin: 8px;
     min-width: 320px;
-    height: 320px;
+    height: 220px;
     background-color: var(--fontBg);
     color: var(--font);
 }
@@ -84,7 +84,7 @@
 /* Sun */
 .planets img:nth-child(1) {
     height: 22%;
-    top: 40%;
+    top: 250px;
     animation: sun;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -110,8 +110,8 @@
 /* Mercury */
 .planets img:nth-child(2) {
     height: 10%;
-    top: 53%;
-    left: 76px;
+    top: 380px;
+    left: 100px;
     animation: mercury;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -139,7 +139,7 @@
 /* Venus */
 .planets img:nth-child(3) {
     height: 15%;
-    top: 60%;
+    top: 420px;
     left: 30%;
     animation: venus;
     animation-duration: 7s;
@@ -168,7 +168,7 @@
 /* Earth */
 .planets img:nth-child(4) {
     height: 15%;
-    top: 65%;
+    top: 500px;
     left: -16px;
     z-index: 4;
     animation: earth;
@@ -192,7 +192,7 @@
 /* Mars */
 .planets img:nth-child(5) {
     height: 13%;
-    top: 75%;
+    top: 600px;
     left: 160px;
     z-index: 8;
     animation: mars;
@@ -304,11 +304,15 @@ footer {
 }
 
 @media (min-width: 1240px) {
+    .solarSystemBox {
+        min-height: 1050px;
+    }
+
     .solarInfo {
         position: absolute;
         display: block;
         width: 400px;
-        min-height: 100vh;
+        min-height: 1000px;
         background-color: var(--fontBg);
         right: 16px;
         top: 0;
