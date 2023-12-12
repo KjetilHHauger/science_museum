@@ -12,6 +12,7 @@ main {
     width: 90vw;
     color: var(--font);
     margin: 8px auto 0 auto;
+    z-index: 1;
 }
 
 .infoBox h1 {
@@ -39,6 +40,8 @@ main {
 .moonLandingBox {
     position: relative;
     height: 750px;
+    background-image: url(/assets/images/mobile/exhibitionBgMobile.webp);
+    z-index: 0;
 }
 
 @keyframes landing {
@@ -46,7 +49,7 @@ main {
         transform: translateY(0);
     }
     to {
-        transform: translateY(70px);
+        transform: translateY(170px);
     }
 }
 
@@ -58,11 +61,11 @@ main {
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 #landingSpaceship img {
     width: 80px;
-    z-index: -1;
 }
 
 #landingMoon {
@@ -72,12 +75,12 @@ main {
     width: 100vw;
     position: absolute;
     bottom: 150px;
+    z-index: -1;
 }
 
 #landingMoon img {
     width: 360px;
     height: 370px;
-    z-index: -1;
 }
 
 @media (min-width: 768px) {
@@ -96,7 +99,7 @@ main {
             transform: translateY(0);
         }
         to {
-            transform: translateY(330px);
+            transform: translateY(380px);
         }
     }
 
@@ -112,7 +115,8 @@ main {
     
     #landingMoon {
         left: -2px;
-        height: 178px;
+        height: 280px;
+        bottom: 0;
     }
 
     #landingMoon img {
@@ -122,24 +126,14 @@ main {
 }
 
 @media (min-width: 1024px) {
-    @keyframes landing {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(330px);
-        }
-    }
-
     #landingSpaceship {
         padding-left: 41%;
     }
     
     #landingMoon {
-        margin-top: 0;
-        height: 300px;
+        height: 280px;
         width: 90vw;
-        bottom: 40px;
+        bottom: 0;
     }
 }
 
