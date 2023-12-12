@@ -331,19 +331,25 @@
 }
 
 @media (min-width: 1240px) {
+    .geometry {
+        position: relative;
+        top: 0;
+        min-height: 80vh;
+    }
+
     .triangle {
         transform: rotate(190deg);
         border-left: 300px solid transparent;
         border-right: 300px solid transparent;
         border-bottom: 600px solid var(--sun);
-        top: 40px;
+        top: 20px;
         left: 10px;
     }
     
     .circle {
         width: 400px;
         height: 400px;
-        top: 300px;
+        top: 280px;
         left: 436px;
         background-position-x: -400px;
     }
@@ -353,7 +359,7 @@
         height: 540px;
         transform: rotate(154deg);
         left: 820px;
-        top: 120px;
+        top: 100px;
     }
 
     .square img {
@@ -386,19 +392,16 @@
 
 @media (min-width: 1440px) {
     .triangle {
-        top: 40px;
         left: 174px;
     }
     
     .circle {
         width: 400px;
         height: 400px;
-        top: 300px;
         left: 600px;
     }
 
     .square {
         left: 988px;
-        top: 120px;
     }
 }
