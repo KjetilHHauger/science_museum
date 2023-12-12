@@ -124,26 +124,28 @@
 
     @media (min-width: 1024px) {
         .geometry {
+            top: 0;
+            min-height: 80vh;
             overflow: hidden;
         }
 
         .circle {
             height: 340px;
-            top: 140px;
+            top: 0;
             left: 184px;
         }
         
         .square {
             width: 365px;
             height: 350px;
-            top: 480px;
+            top: 340px;
             left: 20px;
         }
         
         .triangle {
             height: 450px;
             width: 450px;
-            top: 390px;
+            top: 250px;
             left: 448px;
     }
 
@@ -155,42 +157,3 @@
     }
 }
 
-    @media (min-width: 1240px) { 
-        .geometry {
-            overflow: hidden;
-        }
-
-        .circle {
-            width: 400px;
-            height: 400px;
-            top: 0;
-            left: 230px;
-        }
-        
-        .circleList ul {
-            transform: rotate(-10deg);
-        }
-
-        .square {
-            width: 445px;
-            height: 430px;
-            top: 400px;
-            left: 20px;
-        }
-        
-        .triangle {
-            position: absolute;
-            height: 600px;
-            width: 600px;
-            transform: rotate(155deg);
-            top: 250px;
-            left: 564px;
-    }
-
-        #OSM-map {
-            width: 744px;
-            height: 1044px;
-            transform: translate3d(80px, 195px, 0px);
-            rotate: 180deg;
-    }
-}
