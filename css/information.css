@@ -117,8 +117,11 @@
     #OSM-map {
         width: 744px;
         height: 1044px;
-        transform: translate3d(130px, 295px, 0px);
-        rotate: 180deg;
+        transform: rotate(180deg);
+    }
+
+    .leaflet-pane {
+        transform: translate3d(50px, 160px, 0px);
     }
 }
 
@@ -148,12 +151,4 @@
             top: 250px;
             left: 448px;
     }
-
-        #OSM-map {
-            width: 744px;
-            height: 1044px;
-            transform: translate3d(130px, 295px, 0px);
-            rotate: 180deg;
-    }
 }
-
