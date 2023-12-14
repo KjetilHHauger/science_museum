@@ -9,12 +9,20 @@
 - WCAG
 
 ## Technology used
-- Prettier & W3C Validation
 - Leaflet JS (https://leafletjs.com/)
 - OSM Generator (https://www.osm-generator.com/)
 - HTML
 - CSS
 - Java Script
+
+## Tools used
+- Prettier & W3C Validation
+- Figma: For design
+- VS Studio: For HTML, CSS and JS
+- Copilot (ChatGPT and Dall-e): For filler text and logo
+- Sourcetree/Github
+- FontAwesome: Fonts
+- Freepik.com: For images
 
 ## Structure
 - [`/`](https://github.com/KjetilHHauger/science_museum) : HTML
@@ -30,9 +38,8 @@ Hey, im a first year student at Noroff Front-end. Our task is to make a science 
 
 [Roadmap](https://github.com/users/KjetilHHauger/projects/3/views/4)
 
-
-My 4-week website development plan follows a structured approach. Over a 7-day design period, you begin with a day of Lo Fi design, exploring various ideas for mobile presentation. Subsequently, you transition to Mid Fi, blocking out and refining designs for tablets and desktops, with flexibility for adjustments based on on-screen appearance. 
-The Hi Fi wireframe phase prioritizes font, color palette, and active state considerations.
+My 4-week website development plan follows a structured approach. Over a 7-day design period, I begin with a day of Lo Fi design, exploring various ideas for mobile presentation. Subsequently, I transition to Mid Fi, blocking out and refining designs for tablets and desktops, with flexibility for adjustments based on on-screen appearance. 
+The Hi Fi wireframe phase prioritizes font, color palette.
 Post-design, attention shifts to the navbar and footer, pivotal components across all pages.  
 
 Testing using Lighthouse and markup validation ensures adherence to criteria before implementation, showcasing a commitment to quality.
@@ -44,3 +51,4 @@ The information page prioritizes simplicity for optimal readability.
 Your planned 2-week development period focuses on animation work, responsive design, and rigorous testing for accessibility and SEO using Lighthouse. 
 
 The final week is allocated for addressing unforeseen challenges, bug fixing, and overall site refinement. 
+
