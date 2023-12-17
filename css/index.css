@@ -231,7 +231,7 @@
     .geometry {
         position: relative;
         top: 10px;
-        min-height: 80vh;
+        min-height: 90vh;
     }
 
     .triangle {
@@ -331,9 +331,7 @@
 
 @media (min-width: 1240px) {
     .geometry {
-        position: relative;
-        top: 0;
-        min-height: 80vh;
+        min-height: 100vh;
     }
 
     .triangle {
