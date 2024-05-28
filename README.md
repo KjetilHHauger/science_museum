@@ -1,52 +1,58 @@
-<img src="/assets/images/logo.webp" width="200px">
+# Science Museum: A School Project
 
-## Science Museum: A School Project
+![Science Museum Logo](/assets/images/logo.webp)
 
-Crafted specifically for children aged 7-14. This project, developed as part of my coursework at Noroff Front-end, aims to engage young minds with a playful and interactive approach while providing educational content in a format that captivates their interest.
+Crafted specifically for children aged 7-14, this project, developed as part of my coursework at Noroff Front-end, aims to engage young minds with a playful and interactive approach while providing educational content in a format that captivates their interest.
 
-## Features
+## Description
+
+As a first-year student at Noroff Front-end, I have focused on creating a science museum website that deviates from the conventional sterile aesthetics typically targeted at adults. My goal was to design a more engaging and playful experience that appeals directly to children, inspired by my background in kindergarten education.
+
+### Features
 
 - **Animation**: Smooth and child-friendly animations that capture attention and encourage interaction.
 - **Kid-Friendly Design**: A vibrant and engaging interface designed to appeal directly to children.
 - **Responsive Layout**: Fully adaptable interface, suitable for a variety of devices and screen sizes.
 - **Accessibility**: Compliant with WCAG standards to ensure it is accessible to all users.
 
-## Technologies Used
+## Built With
 
-- **HTML, CSS, & JavaScript**: Core web technologies used for structure, styling, and functionality.
-- **Leaflet JS**: An open-source JavaScript library for mobile-friendly interactive maps. [Learn more](https://leafletjs.com/)
-- **OSM Generator**: Utilized for generating OpenStreetMap tiles. [Learn more](https://www.osm-generator.com/)
+- [HTML](https://www.w3.org/html/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [JavaScript](https://www.javascript.com/)
+- [Leaflet JS](https://leafletjs.com/)
+- [OSM Generator](https://www.osm-generator.com/)
 
-## Tools Used
+## Getting Started
 
-- **Figma**: Used for UI/UX design.
-- **Visual Studio Code**: Code editing for HTML, CSS, and JavaScript.
-- **GitHub and Sourcetree**: For source control management.
-- **Prettier & W3C Validation**: Ensuring code quality and standards compliance.
-- **FontAwesome & Freepik.com**: For fonts and images respectively.
+### Installing
 
-## Project Structure
+To set up a local copy of the project, follow these steps:
 
-- [`Root`](https://github.com/KjetilHHauger/science_museum): Contains the HTML files.
-- [`/assets`](https://github.com/KjetilHHauger/science_museum/tree/main/assets): Static assets like images and downloadable content.
-- [`/css`](https://github.com/KjetilHHauger/science_museum/tree/main/css): CSS files for styling.
-- [`/js`](https://github.com/KjetilHHauger/science_museum/tree/main/js): JavaScript files for interactive elements.
+Clone the repo:
+   ```bash
+   git clone https://github.com/KjetilHHauger/science_museum.git
 
-## Introduction
+## Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-As a first-year student at Noroff Front-end, I have focused on creating a science museum website that deviates from the conventional sterile aesthetics typically targeted at adults. My goal was to design a more engaging and playful experience that appeals directly to children, inspired by my background in kindergarten education.
+Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+Push to the Branch (git push origin feature/AmazingFeature)
+Open a Pull Request
 
-## The Plan and Execution
+## Contact
 
-The design and development process was carefully tailored to balance simplicity with engaging elements to captivate the young audience. This included:
-- **Minimalist Design**: Adopting a clean, simple design strategy to hold the attention spans influenced by platforms like YouTube and TikTok.
-- **Interactive Elements**: Using JavaScript for interactive features and Leaflet.js for an interactive map, ensuring the site is not only informative but also engaging.
+[My LinkedIn page](https://www.linkedin.com/in/kjetil-harneshaug-hauger-00851084/)
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+Thanks to everyone who has assisted with advice and feedback.
+All resources from FontAwesome and Freepik.com have greatly helped in crafting the visuals.
 
 [Roadmap](https://github.com/users/KjetilHHauger/projects/3/views/4)
 
-"Explorify" is more than just a project; it's an initiative to inspire a love for science in young minds through interactive learning and creativity. This journey through the semester has been a profound blend of creativity, technology, and education, setting a foundation for future enhancements.
-
----
-
 Thank you for visiting my project repository. Feel free to explore the various elements and engage with the platform.
-
