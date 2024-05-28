@@ -32,7 +32,11 @@ To set up a local copy of the project, follow these steps:
 1. Clone the repo:
    ```bash
    git clone https://github.com/KjetilHHauger/science_museum.git
-   
+
+## LIVE site
+
+[Science Museum](https://kjetilhhauger.github.io/science_museum/)
+
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
