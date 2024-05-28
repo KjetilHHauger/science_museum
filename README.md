@@ -1,47 +1,51 @@
-<img src="/assets/images/logo.webp" width="200px">
+<img src="/assets/images/logo.webp" width="200px" style=" margin-left auto; margin-right auto;">
+# Science Museum: A School Project
 
-# Science Museum; a school project
+Welcome to the "Explorify" project for the Science Museum, crafted specifically for children aged 7-14. This project, developed as part of my coursework at Noroff Front-end, aims to engage young minds with a playful and interactive approach while providing educational content in a format that captivates their interest.
 
 ## Features
-- Animation
-- Kid friendly
-- Responsive
-- WCAG
 
-## Technology used
-- Leaflet JS (https://leafletjs.com/)
-- OSM Generator (https://www.osm-generator.com/)
-- HTML
-- CSS
-- Java Script
+- **Animation**: Smooth and child-friendly animations that capture attention and encourage interaction.
+- **Kid-Friendly Design**: A vibrant and engaging interface designed to appeal directly to children.
+- **Responsive Layout**: Fully adaptable interface, suitable for a variety of devices and screen sizes.
+- **Accessibility**: Compliant with WCAG standards to ensure it is accessible to all users.
 
-## Tools used
-- Prettier & W3C Validation
-- Figma: For design
-- VS Studio: For HTML, CSS and JS
-- Copilot (ChatGPT and Dall-e): For filler text and logo
-- Sourcetree/Github
-- FontAwesome: Fonts
-- Freepik.com: For images
+## Technologies Used
 
-## Structure
-- [`/`](https://github.com/KjetilHHauger/science_museum) : HTML
-- [`assets`](https://github.com/KjetilHHauger/science_museum/tree/main/assets) : Contains static assets
-- [`css`](https://github.com/KjetilHHauger/science_museum/tree/main/css) : Styles
-- [`js`](https://github.com/KjetilHHauger/science_museum/tree/main/js) : Java script
+- **HTML, CSS, & JavaScript**: Core web technologies used for structure, styling, and functionality.
+- **Leaflet JS**: An open-source JavaScript library for mobile-friendly interactive maps. [Learn more](https://leafletjs.com/)
+- **OSM Generator**: Utilized for generating OpenStreetMap tiles. [Learn more](https://www.osm-generator.com/)
 
-### Introduction
+## Tools Used
 
-Hey, im a first year student at Noroff Front-end. Our task is to make a science museum website for kids between 7-14 years of age. From my research of science museum website, do i feel they have a very clean and sterile look to them. I feel that look works more towards the parents. So i wanted to create something that looks and feels more kid friendly. More stop motion, game feel of the page.
+- **Figma**: Used for UI/UX design.
+- **Visual Studio Code**: Code editing for HTML, CSS, and JavaScript.
+- **GitHub and Sourcetree**: For source control management.
+- **Prettier & W3C Validation**: Ensuring code quality and standards compliance.
+- **FontAwesome & Freepik.com**: For fonts and images respectively.
 
-### The plan
+## Project Structure
+
+- [`Root`](https://github.com/KjetilHHauger/science_museum): Contains the HTML files.
+- [`/assets`](https://github.com/KjetilHHauger/science_museum/tree/main/assets): Static assets like images and downloadable content.
+- [`/css`](https://github.com/KjetilHHauger/science_museum/tree/main/css): CSS files for styling.
+- [`/js`](https://github.com/KjetilHHauger/science_museum/tree/main/js): JavaScript files for interactive elements.
+
+## Introduction
+
+As a first-year student at Noroff Front-end, I have focused on creating a science museum website that deviates from the conventional sterile aesthetics typically targeted at adults. My goal was to design a more engaging and playful experience that appeals directly to children, inspired by my background in kindergarten education.
+
+## The Plan and Execution
+
+The design and development process was carefully tailored to balance simplicity with engaging elements to captivate the young audience. This included:
+- **Minimalist Design**: Adopting a clean, simple design strategy to hold the attention spans influenced by platforms like YouTube and TikTok.
+- **Interactive Elements**: Using JavaScript for interactive features and Leaflet.js for an interactive map, ensuring the site is not only informative but also engaging.
 
 [Roadmap](https://github.com/users/KjetilHHauger/projects/3/views/4)
 
-In undertaking the semester project, my design instincts, shaped by years in kindergarten settings, naturally directed the creation of an engaging platform primarily catering to the lower end of the age group. The project, titled "Explorify," focuses on delivering an immersive experience for children, complemented by information pages tailored for accompanying adults.
-The design process unfolded seamlessly, with animations tested to strike a balance between engagement and simplicity. While coding, minor adjustments were made, particularly on information pages, refining the visual appeal for the target audience. The development journey involved dedicated efforts, with JavaScript proving instrumental in adding interactivity and functionality.
-Embracing the era of short attention spans prevalent in platforms like YouTube and TikTok, the pages adopt a minimalist design. The project intentionally keeps information concise, aiming to spark curiosity and prompt visits to the museum for deeper exploration.
-Visual elements from freepik.com, a logo generated through Copilot with DALL-E, and tools like Leaflet.js with osm-generator for the interactive map contribute to the project's vibrant and user-friendly nature.
-"Explorify" serves as a testament to the seamless integration of creativity and functionality in front-end development, providing a visually stimulating, interactive, and educational platform for the Science Museum's younger audience. This semester-long journey reflects a commitment to fostering an early love for science exploration among the curious minds aged 7-14.
+"Explorify" is more than just a project; it's an initiative to inspire a love for science in young minds through interactive learning and creativity. This journey through the semester has been a profound blend of creativity, technology, and education, setting a foundation for future enhancements.
 
+---
+
+Thank you for visiting my project repository. Feel free to explore the various elements and engage with the platform.
 
