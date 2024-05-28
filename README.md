@@ -1,6 +1,6 @@
 # Science Museum: A School Project
 
-![Science Museum Logo](/assets/images/logo.webp)
+![Science Museum Logo](/assets/images/readme/readme.webp)
 
 Crafted specifically for children aged 7-14, this project, developed as part of my coursework at Noroff Front-end, aims to engage young minds with a playful and interactive approach while providing educational content in a format that captivates their interest.
 
